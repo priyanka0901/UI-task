@@ -90,7 +90,7 @@ table tr td {
 
 .container {
   background-color: #fff;
-  padding: 6% 10px;
+  padding: 6% 10px 3%;
   margin: auto;
   width: 100%;
 }
@@ -143,4 +143,18 @@ table tr td {
   text-transform: uppercase;
   top: 50%;
   transform: translateX(-50%)translateY(-50%);
+}
+
+.footer {
+  height: 100%;
+  margin: 0 20px;
+  width: 100%; 
+}
+
+.footer div {
+  background-color: #FF003C;
+  float: left;
+  height: 200px;
+  width: 30%;
+  margin: 0 15px;
 }
