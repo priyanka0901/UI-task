@@ -90,7 +90,7 @@ table tr td {
 
 .container {
   background-color: #fff;
-  padding: 6% 10px 3%;
+  padding: 6% 10px 2%;
   margin: auto;
   width: 100%;
 }
@@ -154,7 +154,7 @@ table tr td {
 .footer div {
   background-color: #FF003C;
   float: left;
-  height: 200px;
+  height: 220px;
   width: 30%;
   margin: 0 15px;
 }
