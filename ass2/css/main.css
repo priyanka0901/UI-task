@@ -52,13 +52,16 @@ h6 {font-size: 14px;}
 p,
 ul li,
 a,
-button,
 input,
 label,
 select,
 textarea,
 table tr td {
   font-size: 16px;
+}
+
+button {
+  font-size: 12px;
 }
 
 .clear {
@@ -131,14 +134,9 @@ table tr td {
   border: 1px solid #fff;
   border-radius: 50%;
   margin-bottom: 10px;
-  height: 50px;
+  line-height: 50px;
+  text-align: center;
   width: 50px;
-}
-
-.sidebar-name div h1 {
-  left: 17px;
-  position: relative;
-  top: 10px;
 }
 
 .sidebar-menu {
@@ -175,7 +173,6 @@ table tr td {
 
 .landing-heading {
   display: inline-block;
-  width: 80%;
 }
 
 .landing-heading span {
@@ -193,7 +190,11 @@ table tr td {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
   border-radius: 3px;
+  float: right;
+  font-size: 14px;
   padding: 5px 10px;
+  position: relative;
+  right: 40px;
   text-transform: uppercase;
 }
 
@@ -229,16 +230,11 @@ table tr td {
 .letter-style {
   background-color: #415B65;
   border-radius: 50%;
+  color: #fff;
   display: inline-block;
-  height: 35px;
+  line-height: 35px;
+  text-align: center;
   width: 35px;
-}
-
-.letter-style h3 {
-  color:#fff;
-  left: 15px;
-  position: relative;
-  top: 2px;
 }
 
 .name-box {
@@ -262,7 +258,6 @@ table tr td {
   border-radius: 3px;
   border: 0;
   color: #fff;
-  font-size: 12px;
   font-weight: 600;
   float: right;
   padding: 5px 10px;
@@ -296,18 +291,83 @@ table tr td {
   background-color: #FAFAFA;
   height: 100%;
   margin-top: 80px;
-  padding: 20px;
+  padding: 10px 20px;
   position: absolute;
   left: 78%;
   width: 19%;
 }
 
+.organization-info h1 { 
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
 
+.organization-info h3 {
+  font-weight: 200;
+  margin:5px 0;
+}
 
+.organization-contact li {
+  margin: 10px 5px;
+}
 
+.organization-contact li p{
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: top;
+}
 
+.edit-button {
+  background-color: #FFA500;
+  border:0;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  font-weight: 600;
+  float: right;
+  padding: 5px;
+  text-transform: uppercase;
+}
 
-  
+.delete {
+  text-align: center;
+}
+
+.delete button {
+  background-color: #FF0012;
+  border:0;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  font-weight: 600;
+  margin: 20px 0;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.transfer {
+  border-bottom: 1px solid #ccc;
+}
+
+.email {
+  border-bottom: 1px solid #ccc;
+  color:#999;
+  font-size: 13px;
+}
+
+.owner-button {
+  background-color: #009BAA;
+  border:0;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  float: right;
+  font-weight: 600;
+  margin: 20px 0;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
 
 
 
