@@ -64,6 +64,14 @@ table tr td {
   clear: both;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .navbar {
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
@@ -97,17 +105,58 @@ table tr td {
 
 .sidebar {
   background-color: #2E3A4D;
-  width: 30%;
-  
+  margin-top: 80px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  width: 15%;
 }
 
+.sidebar-options {
+  height: 100%;
+  position: relative;
+}
 
+.sidebar-name {
+  border-bottom: 1px solid #4A5469;
+  color: #fff;
+  padding-bottom:10px;
+  margin-bottom: 15px;
+}
 
+.sidebar-name div {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+}
 
+.sidebar-name div h1 {
+  left: 17px;
+  position: relative;
+  top: 10px;
+}
 
+.sidebar-menu {
+  color:#fff;;
+  margin-bottom: 20px;
+}
 
+.sidebar-menu i {
+  margin-right: 15px;
+}
 
+.sidebar-logout {
+  bottom: 110px;
+  color: #f4f4f4;
+  position: absolute;
+  text-transform: uppercase;
+}
 
+.sidebar-logout i {
+  margin: 0 10px;
+}
 
 
 
