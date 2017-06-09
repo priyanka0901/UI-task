@@ -134,7 +134,7 @@ button {
   margin-bottom: 15px;
 }
 
-'.sidebar-name div' {
+.sidebar-name div {
   border: 1px solid #fff;
   border-radius: 50%;
   line-height: 50px;
@@ -148,7 +148,7 @@ button {
   margin-bottom: 20px;
 }
 
-'.sidebar-menu i' {
+.sidebar-menu i {
   margin-right: 15px;
 }
 
@@ -159,7 +159,7 @@ button {
   text-transform: uppercase;
 }
 
-'.sidebar-logout i' {
+.sidebar-logout i {
   margin: 0 10px;
 }
 
@@ -179,11 +179,11 @@ button {
   display: inline-block;
 }
 
-'.landing-heading span' {
+.landing-heading span {
   color: #437AF7;
 }
 
-'.landing-heading i' {
+.landing-heading i {
   color: #FFA500;
   padding-left: 20px;
 }
@@ -202,7 +202,7 @@ button {
   text-transform: uppercase;
 }
 
-'.landing-page h6' {
+.landing-page h6 {
   color: #FFA500;
   margin-top: 5px;
   text-transform: uppercase;
@@ -214,16 +214,16 @@ button {
   right: 40px;
 }
 
-'.dropdown h6' {
+.dropdown h6 {
   color: #437af7;
   display: inline-block;
 }
 
-'.dropdown span' {
+.dropdown span {
   border-bottom: 1px solid #437AF7;
 }
 
-'.dropdown span select' {
+.dropdown span select {
   background: #fff;
   border: 0;
   display: inline-block;
@@ -235,7 +235,7 @@ button {
   width: 95%;
 }
 
-'.name-list  li' {
+.name-list  li {
   border-bottom: 1px solid #E1E8EA;
   padding: 10px 0;
 }
@@ -256,11 +256,11 @@ button {
   vertical-align: middle;
 }
 
-'.name-box p:nth-child(1)' {
+.name-box p:nth-child(1) {
   color: #444;
 }
 
-'.name-box p:nth-child(2)' {
+.name-box p:nth-child(2) {
   color: #999;
   font-size: 12px;
 }
@@ -304,21 +304,21 @@ button {
   width: 19%;
 }
 
-'.organization-info h1' { 
+.organization-info h1 { 
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
 }
 
-'.organization-info h3' {
+.organization-info h3 {
   font-weight: 200;
   margin:5px 0;
 }
 
-'.organization-contact li' {
+.organization-contact li {
   margin: 10px 5px;
 }
 
-'.organization-contact li p' {
+.organization-contact li p {
   display: inline-block;
   margin: 0 5px;
   vertical-align: top;
@@ -340,7 +340,7 @@ button {
   text-align: center;
 }
 
-'.delete button' {
+.delete button {
   background-color: #FF0012;
   border: 0;
   border-radius: 3px;
