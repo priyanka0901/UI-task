@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+button,
+input,
+select,
+textarea,
+table tr td {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-options li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu {
+  margin-left: 50px;
+}
+
+.menu i {
+  font-size: 30px;
+}
+
+.search {
+  background-color: #ECEBEB;
+  color: #999;
+  line-height: 40px;
+  margin-left: 15px;
+  padding-left: 10px;
+  width: 40%;
+}
+
+.sidebar {
+  background-color: #2E3A4D;
+  width: 30%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
