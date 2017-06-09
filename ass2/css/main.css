@@ -1,7 +1,7 @@
 body,
 html {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 * {
@@ -43,12 +43,12 @@ a {
   text-decoration: none;
 }
 
-h1 {font-size: 24px;}
-h2 {font-size: 22px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
-h5 {font-size: 16px;}
-h6 {font-size: 14px;}
+h1 {font-size: 24px; font-weight: 400;}
+h2 {font-size: 22px; font-weight: 300;}
+h3 {font-size: 20px; font-weight: 300;}
+h4 {font-size: 18px; font-weight: 300;}
+h5 {font-size: 16px; font-weight: 200;}
+h6 {font-size: 14px; font-weight: 200;}
 p,
 ul li,
 a,
@@ -81,7 +81,6 @@ button {
 .navbar {
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
-  padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -96,25 +95,30 @@ button {
   margin-left: 50px;
 }
 
-.menu i {
+'.menu i' {
   font-size: 30px;
 }
 
 .search {
   background-color: #ECEBEB;
   color: #999;
+  font-size: 12px;
   line-height: 40px;
   margin-left: 15px;
   padding-left: 10px;
   width: 40%;
 }
 
+'.search i' {
+  margin-right: 10px;
+}
+
 .sidebar {
   background-color: #2E3A4D;
-  margin-top: 80px;
+  height: 100%;
+  margin-top: 60px;
   padding: 20px;
   position: fixed;
-  height: 100%;
   width: 15%;
 }
 
@@ -130,32 +134,32 @@ button {
   margin-bottom: 15px;
 }
 
-.sidebar-name div {
+'.sidebar-name div' {
   border: 1px solid #fff;
   border-radius: 50%;
-  margin-bottom: 10px;
   line-height: 50px;
+  margin-bottom: 10px;
   text-align: center;
   width: 50px;
 }
 
 .sidebar-menu {
-  color:#fff;;
+  color: #fff;;
   margin-bottom: 20px;
 }
 
-.sidebar-menu i {
+'.sidebar-menu i' {
   margin-right: 15px;
 }
 
 .sidebar-logout {
-  bottom: 110px;
+  bottom: 100px;
   color: #f4f4f4;
   position: absolute;
   text-transform: uppercase;
 }
 
-.sidebar-logout i {
+'.sidebar-logout i' {
   margin: 0 10px;
 }
 
@@ -164,7 +168,7 @@ button {
 .landing-page {
   background-color: #fff;
   height: 100%;
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 20px;
   position: absolute;
   left: 18%;
@@ -175,18 +179,18 @@ button {
   display: inline-block;
 }
 
-.landing-heading span {
+'.landing-heading span' {
   color: #437AF7;
 }
 
-.landing-heading i {
+'.landing-heading i' {
   color: #FFA500;
   padding-left: 20px;
 }
 
 .add-member {
   background-color: #437AF7;
-  border: none;
+  border: 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
   border-radius: 3px;
@@ -198,31 +202,40 @@ button {
   text-transform: uppercase;
 }
 
-.landing-page h6 {
+'.landing-page h6' {
   color: #FFA500;
   margin-top: 5px;
   text-transform: uppercase;
 }
 
 .dropdown {
-  border-bottom: 1px solid #437AF7;
   float: right;
   position: relative;
   right: 40px;
 }
 
-.dropdown select{
+'.dropdown h6' {
+  color: #437af7;
+  display: inline-block;
+}
+
+'.dropdown span' {
+  border-bottom: 1px solid #437AF7;
+}
+
+'.dropdown span select' {
   background: #fff;
   border: 0;
-  width: 50px;
+  display: inline-block;
   outline: 0;
+  width: 50px;
 }
 
 .name-list {
   width: 95%;
 }
 
-.name-list  li {
+'.name-list  li' {
   border-bottom: 1px solid #E1E8EA;
   padding: 10px 0;
 }
@@ -243,23 +256,22 @@ button {
   vertical-align: middle;
 }
 
-.name-box p:nth-child(1) {
+'.name-box p:nth-child(1)' {
   color: #444;
 }
 
-.name-box p:nth-child(2) {
+'.name-box p:nth-child(2)' {
   color: #999;
   font-size: 12px;
-
 }
 
 .make-owner {
   background: #009CAA;
-  border-radius: 3px;
   border: 0;
+  border-radius: 3px;
   color: #fff;
-  font-weight: 600;
   float: right;
+  font-weight: 600;
   padding: 5px 10px;
   position: relative;
   text-transform: uppercase;
@@ -268,51 +280,45 @@ button {
 
 .plus-button {
   background: #437AF7;
-  border: none;
+  border: 0;
   border-radius: 50%;
   bottom: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   color: #fff;
   height: 61px;
+  outline: none;
   position: fixed;
   right: 350px;
-  outline: none;
   width: 60px;
 }
-
-
-
-
-
 
 /*--------organizationinfo--------*/
 
 .organization-info {
   background-color: #FAFAFA;
   height: 100%;
-  margin-top: 80px;
+  left: 78%;
+  margin-top: 60px;
   padding: 10px 20px;
   position: absolute;
-  left: 78%;
   width: 19%;
 }
 
-.organization-info h1 { 
+'.organization-info h1' { 
   border-bottom: 1px solid #ccc;
-  font-weight: 400;
   padding-bottom: 5px;
 }
 
-.organization-info h3 {
+'.organization-info h3' {
   font-weight: 200;
   margin:5px 0;
 }
 
-.organization-contact li {
+'.organization-contact li' {
   margin: 10px 5px;
 }
 
-.organization-contact li p{
+'.organization-contact li p' {
   display: inline-block;
   margin: 0 5px;
   vertical-align: top;
@@ -324,8 +330,8 @@ button {
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
-  font-weight: 600;
   float: right;
+  font-weight: 600;
   padding: 5px;
   text-transform: uppercase;
 }
@@ -334,9 +340,9 @@ button {
   text-align: center;
 }
 
-.delete button {
+'.delete button' {
   background-color: #FF0012;
-  border:0;
+  border: 0;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
@@ -354,6 +360,7 @@ button {
   border-bottom: 1px solid #ccc;
   color:#999;
   font-size: 13px;
+  margin-top: 30px !important;
 }
 
 .owner-button {
