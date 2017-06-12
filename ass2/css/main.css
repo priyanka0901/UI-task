@@ -29,10 +29,6 @@ table tr td {
   padding: 0;
 }
 
-em {
-  font-style: normal;
-}
-
 ul li {
   list-style: none;
 }
@@ -66,7 +62,6 @@ table tr td {
 
 button {
   cursor: pointer;
-  font-size: 12px;
 }
 
 .clear {
