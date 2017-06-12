@@ -204,9 +204,7 @@ button {
 
 /*--------landingpage--------*/
 .container {
-  float: left;
   margin-left: 250px;
-  width: 100%;
 }
 
 .landing-page {
@@ -215,7 +213,7 @@ button {
   height: 500px;
   overflow-y: scroll;
   padding: 20px 30px;
-  width: 55%;
+  width: 70%;
 }
 
 .landing-heading {
@@ -331,8 +329,9 @@ button {
 .organization-info {
   background-color: #FAFAFA;
   float: left;
-  height: 100%;
-  padding: 20px;
+  height: 100%; 
+  overflow-y: scroll;
+  padding: 20px 25px 30px;
   width: 20%;
 }
 
@@ -359,17 +358,18 @@ button {
 
 .map-image {
   margin-top: 20px;
-  width: 300px;
+  width: 100%;
 }
 
 .edit-button {
   background-color: #FFA500;
   float: right;
+  margin-top: 15px;
 }
 
 .delete {
   background-color: #FF0012;
-  margin: 20px 40px;
+  margin: 25px 20px;
 }
 
 .form-info {
