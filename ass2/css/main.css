@@ -82,8 +82,10 @@ button {
   border-radius: 3px;
   color: #fff;
   font-size: 14px;
+  line-height: 30px;
+  height: 30px;
   outline: none;
-  padding: 5px 10px;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 
@@ -135,11 +137,7 @@ button {
   width: 40%;
 }
 
-.icon-search:before {
-  content: "\e986";
-}
-
-.search-container input[type=text] {
+.search-container input[type=search] {
   background-color: #ECEBEB;
   margin-left: 10px;
 }
@@ -152,11 +150,6 @@ button {
   padding: 20px;
   position: fixed;
   width: 220px;
-}
-
-.sidebar-options {
-  height: 100%;
-  position: relative;
 }
 
 .sidebar-name {
@@ -187,7 +180,7 @@ button {
 }
 
 .sidebar-logout {
-  bottom: 100px;
+  bottom: 120px;
   color: #f4f4f4;
   position: absolute;
   text-transform: uppercase;
@@ -246,9 +239,10 @@ button {
   float: right;
 }
 
-.dropdown h6 {
+.dropdown p {
   color: #437af7;
   display: inline-block;
+  font-size: 13px;
 }
 
 .dropdown span {
@@ -272,7 +266,7 @@ button {
   padding: 10px 0;
 }
 
-.letter-style {
+.user-icon {
   background-color: #415B65;
   border-radius: 50%;
   color: #fff;
@@ -296,6 +290,11 @@ button {
 .user-email {
   color: #999;
   font-size: 12px;
+}
+
+.user-owner {
+  color:#888;
+  font-size: 13px;
 }
 
 .make-owner {
@@ -344,7 +343,7 @@ button {
   margin: 10px 5px;
 }
 
-.organization-contact div {
+.contact-info {
   display: inline-block;
   margin: 0 5px;
   width: 80%;
@@ -365,6 +364,12 @@ button {
 .delete {
   background-color: #FF0012;
   margin: 25px 20px;
+}
+
+.transfer-ownership {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0 15px 10px;
+  width: 100%;
 }
 
 .form-info {
