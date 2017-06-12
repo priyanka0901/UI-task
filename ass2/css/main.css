@@ -140,6 +140,7 @@ button {
 .search-container input[type=search] {
   background-color: #ECEBEB;
   margin-left: 10px;
+  width: 90%;
 }
 
 /*--------sidebar--------*/
@@ -147,9 +148,12 @@ button {
 .sidebar {
   background-color: #2E3A4D;
   height: 100%;
-  padding: 20px;
   position: fixed;
-  width: 220px;
+  width: 240px;
+}
+
+.sidebar-options {
+  padding:20px;
 }
 
 .sidebar-name {
@@ -180,7 +184,7 @@ button {
 }
 
 .sidebar-logout {
-  bottom: 120px;
+  bottom: 80px;
   color: #f4f4f4;
   position: absolute;
   text-transform: uppercase;
@@ -192,7 +196,8 @@ button {
 
 /*--------landingpage--------*/
 .container {
-  margin-left: 250px;
+  float: left;
+  margin-left: 240px;
 }
 
 .landing-page {
