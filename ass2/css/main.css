@@ -42,13 +42,17 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+input {
+  border: 0;
+  outline: 0;
+}
 
-h1 {font-size: 24px; font-weight: 400;}
-h2 {font-size: 22px; font-weight: 300;}
-h3 {font-size: 20px; font-weight: 300;}
-h4 {font-size: 18px; font-weight: 300;}
-h5 {font-size: 16px; font-weight: 200;}
-h6 {font-size: 14px; font-weight: 200;}
+h1 {font-size: 22px; font-weight: 400;}
+h2 {font-size: 20px; font-weight: 300;}
+h3 {font-size: 18px; font-weight: 300;}
+h4 {font-size: 16px; font-weight: 300;}
+h5 {font-size: 14px; font-weight: 200;}
+h6 {font-size: 12px; font-weight: 200;}
 p,
 ul li,
 a,
@@ -61,6 +65,7 @@ table tr td {
 }
 
 button {
+  cursor: pointer;
   font-size: 12px;
 }
 
@@ -76,7 +81,33 @@ button {
   float: right;
 }
 
+.button {
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.flat-button {
+  border: 0;
+  background-color: transparent;
+  color: #FFA48C;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 /*--------navbar--------*/
+
+.navbar-container {
+  height: 60px;
+  position: relative;
+}
 
 .navbar {
   background-color: #fff;
@@ -86,40 +117,46 @@ button {
   z-index: 100;
 }
 
-.navbar-options li {
-  display: inline-block;
-  vertical-align: middle;
+.brand-logo {
+  float: left;
 }
 
 .menu {
-  margin-left: 50px;
+  float: left;
+  margin: 15px 50px;
 }
 
 .menu i {
   font-size: 30px;
 }
 
-.search {
+.search-container {
   background-color: #ECEBEB;
-  color: #999;
-  font-size: 12px;
-  line-height: 40px;
-  margin-left: 15px;
-  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  float: left;
+  padding: 5px 10px;
+  margin: 15px;
   width: 40%;
 }
 
-.search i {
-  margin-right: 10px;
+.icon-search:before {
+  content: "\e986";
 }
+
+.search-container input[type=text] {
+  background-color: #ECEBEB;
+  margin-left: 10px;
+}
+
+/*--------sidebar--------*/
 
 .sidebar {
   background-color: #2E3A4D;
   height: 100%;
-  margin-top: 60px;
   padding: 20px;
   position: fixed;
-  width: 15%;
+  width: 220px;
 }
 
 .sidebar-options {
@@ -137,7 +174,9 @@ button {
 .sidebar-name div {
   border: 1px solid #fff;
   border-radius: 50%;
+  font-size: 20px;
   line-height: 50px;
+  height: 50px;
   margin-bottom: 10px;
   text-align: center;
   width: 50px;
@@ -164,15 +203,19 @@ button {
 }
 
 /*--------landingpage--------*/
+.container {
+  float: left;
+  margin-left: 250px;
+  width: 100%;
+}
 
 .landing-page {
   background-color: #fff;
-  height: 100%;
-  margin-top: 60px;
-  padding: 20px;
-  position: absolute;
-  left: 18%;
-  width: 60%;
+  float: left;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 20px 30px;
+  width: 55%;
 }
 
 .landing-heading {
@@ -188,21 +231,19 @@ button {
   padding-left: 20px;
 }
 
-.add-member {
-  background-color: #437AF7;
+.download {
+  background-color: #fff;
   border: 0;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: #fff;
-  border-radius: 3px;
-  float: right;
-  font-size: 14px;
-  padding: 5px 10px;
-  position: relative;
-  right: 40px;
-  text-transform: uppercase;
+  font-size: 20px;
+  outline: none;
 }
 
-.landing-page h6 {
+.add-member {
+  background-color: #437AF7;
+  float: right;
+}
+
+.landing-page h5 {
   color: #FFA500;
   margin-top: 5px;
   text-transform: uppercase;
@@ -210,8 +251,6 @@ button {
 
 .dropdown {
   float: right;
-  position: relative;
-  right: 40px;
 }
 
 .dropdown h6 {
@@ -231,11 +270,11 @@ button {
   width: 50px;
 }
 
-.name-list {
-  width: 95%;
+.members-list {
+  width: 100%;
 }
 
-.name-list  li {
+.members-list  li {
   border-bottom: 1px solid #E1E8EA;
   padding: 10px 0;
 }
@@ -246,35 +285,30 @@ button {
   color: #fff;
   display: inline-block;
   line-height: 35px;
+  height: 35px;
   text-align: center;
   width: 35px;
 }
 
-.name-box {
+.user-info {
   display: inline-block;
   margin-left: 10px;
   vertical-align: middle;
 }
 
-.name-box p:nth-child(1) {
+.user-name {
   color: #444;
 }
 
-.name-box p:nth-child(2) {
+.user-email {
   color: #999;
   font-size: 12px;
 }
 
 .make-owner {
   background: #009CAA;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
   float: right;
-  font-weight: 600;
-  padding: 5px 10px;
   position: relative;
-  text-transform: uppercase;
   top: 10px;
 }
 
@@ -296,12 +330,10 @@ button {
 
 .organization-info {
   background-color: #FAFAFA;
+  float: left;
   height: 100%;
-  left: 78%;
-  margin-top: 60px;
-  padding: 10px 20px;
-  position: absolute;
-  width: 19%;
+  padding: 20px;
+  width: 20%;
 }
 
 .organization-info h1 { 
@@ -314,66 +346,45 @@ button {
   margin:5px 0;
 }
 
-.organization-contact li {
+.organization-contact span {
   margin: 10px 5px;
 }
 
-.organization-contact li p {
+.organization-contact div {
   display: inline-block;
   margin: 0 5px;
+  width: 80%;
   vertical-align: top;
+}
+
+.map-image {
+  margin-top: 20px;
+  width: 300px;
 }
 
 .edit-button {
   background-color: #FFA500;
-  border:0;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: #fff;
   float: right;
-  font-weight: 600;
-  padding: 5px;
-  text-transform: uppercase;
 }
 
 .delete {
-  text-align: center;
-}
-
-.delete button {
   background-color: #FF0012;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: #fff;
-  font-weight: 600;
-  margin: 20px 0;
-  padding: 5px 15px;
-  text-transform: uppercase;
+  margin: 20px 40px;
 }
 
-.transfer {
+.form-info {
+  background: transparent;
   border-bottom: 1px solid #ccc;
-}
-
-.email {
-  border-bottom: 1px solid #ccc;
-  color:#999;
-  font-size: 13px;
-  margin-top: 30px !important;
+  color: #666;
+  font-size: 15px;
+  margin: 10px 0 15px 10px;
+  width: 100%;
 }
 
 .owner-button {
   background-color: #009BAA;
-  border:0;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: #fff;
   float: right;
-  font-weight: 600;
   margin: 20px 0;
-  padding: 5px 15px;
-  text-transform: uppercase;
 }
 
 

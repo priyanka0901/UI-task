@@ -10,22 +10,24 @@
   </head>
 
   <body>
+    <div class="navbar-container">
     <nav class="navbar">
-    <ul class="navbar-options">
-      <li>
-        <a href="#!"><img src="img/logo.png" class="brand-logo"></a>
-      </li>
-      <li class="menu">
-        <i class="icon-menu"></i>
-      </li>
-      <li class="search"><i class="icon-search"></i>Lookup User</li>
-  </ul>
+      <a href="#!" class="brand-logo"><img src="img/logo.png"></a>
+      <div class="menu"><i class="icon-menu"></i></div>
+      <div class="search-container">
+        <form>
+        <label class="icon-search"></label>
+          <input type="text" name="search" placeholder="Lookup User">
+        </form>
+      </div>
+      <div class="clear"></div>
   </nav>
+  </div>
 
-  <aside class="sidebar">
+  <section class="sidebar">
     <ul class="sidebar-options">
       <li class="sidebar-name">
-        <div><h1>J</h1></div>
+        <div><span>J</span></div>
         <h2>John Snow </h2>
         <p>Acme corp</p>
       </li>
@@ -34,14 +36,16 @@
       <li class="sidebar-menu"><i class="icon-price-tags"></i>Tags</li>
       <li class="sidebar-menu"><i class="icon-circle-down"></i>Aggregation Units</li>
       <li class="sidebar-menu"><i class="icon-file-text2"></i>Reports</li>
-      <li class="sidebar-logout"><i class="icon-switch"></i>Logout</li>
+      <button class="sidebar-logout flat-button"><i class="icon-switch"></i>Logout</button>
     </ul>
-  </aside>
+  </section>
 
-  <section class="landing-page">
-    <h2 class="landing-heading">List of members in <span>Acme Corp </span><i class="icon-download"></i></h2>
-    <button class="add-member">Add member</button>
-    <h6>View pending invitations</h6>
+  <section class="container">
+    <section class="landing-page">
+    <h2 class="landing-heading">List of members in <span>Acme Corp </span>
+    <button class="download"><i class="icon-download"></i></button></h2>
+    <button class="add-member button">Add member</button>
+    <button class="flat-button">View pending invitations</button>
     <div class="dropdown">
     <h6>Jump to</h6>
       <span>
@@ -52,91 +56,95 @@
       <span>
     </div>
     <div class="clear"></div>
-    <ul class="name-list">
+    <ul class="members-list">
     <li>A</li>
       <li> 
         <div class="letter-style"><h3>A</h3></div>
-        <div class="name-box">
-          <p>A Stark</p>
-          <p>astark@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">A Stark</p>
+          <p class="user-email">astark@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
       <li> 
         <div class="letter-style"><h3>A</h3></div>
-        <div class="name-box">
-          <p>Agtha Alev</p>
-          <p>agtha@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">Agtha Alev</p>
+          <p class="user-email">agtha@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
       <li> 
         <div class="letter-style"><h3>A</h3></div>
-        <div class="name-box">
-          <p>Alec Applelbuam</p>
-          <p>alec@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">Alec Applelbuam</p>
+          <p class="user-email">alec@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
     </ul>
-    <ul class="name-list">
+    <ul class="members-list">
     <li>J</li>
       <li> 
         <div class="letter-style"><h3>J</h3></div>
-        <div class="name-box">
-          <p>John Doe (owner)</p>
-          <p>jdoe@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">John Doe (owner)</p>
+          <p class="user-email">jdoe@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
       <li> 
         <div class="letter-style"><h3>J</h3></div>
-        <div class="name-box">
-          <p>John Snow</p>
-          <p>John@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">John Snow</p>
+          <p class="user-email">John@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
       <li> 
         <div class="letter-style"><h3>J</h3></div>
-        <div class="name-box">
-          <p>Jonnae Applelbuam</p>
-          <p>jonnae@acme.com</p>
+        <div class="user-info">
+          <p class="user-name">Jonnae Applelbuam</p>
+          <p class="user-email">jonnae@acme.com</p>
         </div>
-        <button class="make-owner">Make owner</button>
+        <button class="make-owner button">Make owner</button>
       </li> 
     </ul>
     <button class="plus-button"><i class="icon-plus"></i></button>
-  </section>
+    <div class="clear"></div>
+    </section>
 
-  <section class="organization-info">
+    <section class="organization-info">
     <h1>Organization Info </h1>
     <h3>Acme Corp</h3>
-    <ul class="organization-contact">
-      <li><i class="icon-map"></i>
-        <p># 206, Money Chambers <br>
-           K H Road, Shanti Nagar,<br>
-           Bangalore<br>
-           Karnataka <br>
-           India<br>
-           560027<br>
-        </p>
-     </li>
-     <li><i class="icon-phone"></i>
-      <p>+91 01234567890</p>
-     </li>
-     <li><i class="icon-sphere"></i>
-       <p>Asia/Kolkata</p>
-     </li>
-     <li><img src="img/map.png"></li>
-     <li><button class="edit-button">Edit</button>
-       <div class="clear"></div>
-     </li>
-     <li class="delete"><button>Delete Organization</button></li>
-     <li class="transfer">Transfer Ownership</li>
-     <li class="email">Enter email id</li>
-     <li><button class="owner-button">Make Owner </button></li>
-    </ul>
+    <div class="organization-contact">
+      <span class="icon-map"></span>
+      <div># 206, Money Chambers <br>
+        K H Road, Shanti Nagar,<br>
+        Bangalore<br>
+        Karnataka <br>
+        India<br>
+        560027<br>
+      </div>
+      <span class="icon-phone"></span>
+      <div>+91 01234567890</div>
+      <span class="icon-sphere"></span>
+      <div>Asia/Kolkata</div>
+      <img src="img/map.png" class="map-image">
+      <button class="edit-button button">Edit
+    </div>
+    <div class="clear"></div>
+    <button class="delete button">Delete Organization</button>
+    <form>
+      <input type="text" class="form-info" placeholder="Transfer ownership">
+      <input type="text" class="form-info" placeholder="Enter Email Id">
+      <button class="owner-button button">Make Owner </button>
+      <div class="clear"></div>
+    </form>
+
+    <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
   </section>
 </body>
 </html>
