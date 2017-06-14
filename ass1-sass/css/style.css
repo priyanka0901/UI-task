@@ -2211,8 +2211,6 @@
   position: relative; }
   .nav-wrapper .navbar {
     background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     padding: 0 3%;
     position: fixed;
     text-transform: uppercase;
@@ -2239,12 +2237,51 @@
         margin-left: 10px;
         width: 90%; }
 
+.sidebar {
+  background-color: #2E3A4D;
+  color: #f7f7f7;
+  height: 100%;
+  position: fixed;
+  width: 260px;
+  padding: 20px 0; }
+  .sidebar .sidebar-heading {
+    border-bottom: 1px solid #4A5469;
+    margin-bottom: 15px;
+    padding: 20px; }
+    .sidebar .sidebar-heading div {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      font-size: 20px;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 50px; }
+  .sidebar .sidebar-options li {
+    padding: 10px; }
+    .sidebar .sidebar-options li a {
+      color: #f7f7f7; }
+      .sidebar .sidebar-options li a i {
+        padding-right: 15px; }
+    .sidebar .sidebar-options li:hover {
+      background-color: #000;
+      border-left: 2px solid #fff; }
+  .sidebar .sidebar-options .sidebar-logout {
+    bottom: 90px;
+    color: #f7f7f7;
+    position: absolute;
+    text-transform: uppercase; }
+    .sidebar .sidebar-options .sidebar-logout i {
+      margin: 0 10px; }
+
 body,
 html {
+  font-family: 'Roboto', sans-serif;
   margin: 0; }
 
 * {
-  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font-smoothing: antialiased; }
 
 h1,
@@ -2267,29 +2304,35 @@ table tr td {
   padding: 0; }
 
 ul li {
+  font-weight: 200;
   list-style: none; }
 
 a {
-  color: #000;
   text-decoration: none; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 500; }
 
 h2 {
-  font-size: 22px; }
+  font-size: 22px;
+  font-weight: 400; }
 
 h3 {
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 400; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 300; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300; }
 
 h6 {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 200; }
 
 p,
 ul li,

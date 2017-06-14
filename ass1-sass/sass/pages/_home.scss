@@ -8,7 +8,6 @@
 
   .navbar {
     background-color: $transparent;
-    box-shadow: none;
     padding: 0 3%;
     position: fixed;
     text-transform: uppercase;
@@ -48,6 +47,69 @@
   }
 }
 
+//============Navbar Ends============//
+
+//=============Sidebar===============//
+
+.sidebar {
+  background-color: $blue;
+  color: $light-grey;
+  height: 100%;
+  position: fixed;
+  width: 260px;
+  padding: 20px 0;
+
+  .sidebar-heading {
+    border-bottom: 1px solid $grey;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    div {
+      border: 1px solid $white;
+      border-radius: 50%;
+      font-size: 20px;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 50px;
+    }
+  }
+
+  .sidebar-options {
+
+    li {
+      padding: 10px;
+
+      a {
+        color: $light-grey;
+
+        i {
+          padding-right: 15px;
+        }
+      }
+
+      &:hover {
+        background-color: $black;
+        border-left: 2px solid $white;
+      }
+    }
+
+    .sidebar-logout {
+      bottom: 90px;
+      color: $light-grey;
+      position: absolute;
+      text-transform: uppercase;
+
+      i {
+        margin: 0 10px;
+      }
+    }
+  }
+}
 
 
-//============Nvabar Ends============//
+
+
+
+//==============Sidebar Ends=========//
