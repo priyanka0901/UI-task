@@ -2277,7 +2277,6 @@
 .container {
   background-color: #eee;
   float: left;
-  height: 700px;
   margin-left: 260px;
   padding: 5px;
   width: 82%; }
@@ -2311,7 +2310,7 @@
         text-align: center;
         width: 100%; }
         .container .report-wrapper .report-left .report-img img {
-          width: 150px; }
+          width: 125px; }
   .container .report-right {
     width: 50%; }
     .container .report-right .subscribe-button {
