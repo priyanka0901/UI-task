@@ -7,7 +7,7 @@
   position: relative;
 
   .navbar {
-    background-color: $transparent;
+    background-color: $white;
     padding: 0 3%;
     position: fixed;
     text-transform: uppercase;
@@ -108,8 +108,110 @@
   }
 }
 
-
-
-
-
 //==============Sidebar Ends=========//
+
+//==============Container============//
+
+.container {
+  background-color: $background-white;
+  float: left;
+  height: 700px;
+  margin-left: 260px;
+  padding: 5px;
+  width: 82%;
+
+  .container-info {
+    background-color: $white;
+    line-height: 40px;
+    padding: 10px;
+    width: 100%;
+
+    i {
+      font-size: $font-24;
+      margin: 0 10px;
+   }
+
+    h3 {
+      display: inline-block;
+
+      a {
+        color: $light-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .report-wrapper {
+    background-color: $white;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+
+    .report-left {
+      width: 50%;
+
+      .report-button {
+        background-color: $brown;
+      }
+
+      .report-subheading {
+        color: $light-blue;
+        font-size: $font-14;
+        margin: 5px;
+      }
+
+      .report-img {
+        text-align: center;
+        width: 100%;
+
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .report-right {
+    width: 50%;
+
+    .subscribe-button {
+      color: $orange;
+    }
+
+    .form-wrapper {
+      margin: 10% 5% 5%;
+
+        input[type=text] {
+          border-bottom: 1px solid #ccc;
+          display: block;
+          line-height: 20px;
+          margin: 20px 0;
+          padding: 20px 0;
+          width: 80%;
+        }
+
+      .email-label {
+        transform: translateY(-100%);
+      }
+
+     /* .input-field input:focus + .email-label {
+        color: $light-blue;
+      }
+*/
+      .input-field input:focus {
+        border-bottom: 1px solid $light-blue;
+      }
+
+      .flat-subscribe-button {
+        color: $light-blue;
+      }
+
+      .add-button {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+
+
+//===============Container Ends=======//

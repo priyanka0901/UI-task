@@ -2210,7 +2210,7 @@
   height: 75px;
   position: relative; }
   .nav-wrapper .navbar {
-    background-color: transparent;
+    background-color: #fff;
     padding: 0 3%;
     position: fixed;
     text-transform: uppercase;
@@ -2238,14 +2238,14 @@
         width: 90%; }
 
 .sidebar {
-  background-color: #2E3A4D;
+  background-color: #2e3a4d;
   color: #f7f7f7;
   height: 100%;
   position: fixed;
   width: 260px;
   padding: 20px 0; }
   .sidebar .sidebar-heading {
-    border-bottom: 1px solid #4A5469;
+    border-bottom: 1px solid #4a5469;
     margin-bottom: 15px;
     padding: 20px; }
     .sidebar .sidebar-heading div {
@@ -2273,6 +2273,71 @@
     text-transform: uppercase; }
     .sidebar .sidebar-options .sidebar-logout i {
       margin: 0 10px; }
+
+.container {
+  background-color: #eee;
+  float: left;
+  height: 700px;
+  margin-left: 260px;
+  padding: 5px;
+  width: 82%; }
+  .container .container-info {
+    background-color: #fff;
+    line-height: 40px;
+    padding: 10px;
+    width: 100%; }
+    .container .container-info i {
+      font-size: 24px;
+      margin: 0 10px; }
+    .container .container-info h3 {
+      display: inline-block; }
+      .container .container-info h3 a {
+        color: #5C8BD3;
+        text-decoration: underline; }
+  .container .report-wrapper {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%; }
+    .container .report-wrapper .report-left {
+      width: 50%; }
+      .container .report-wrapper .report-left .report-button {
+        background-color: #6B3A2B; }
+      .container .report-wrapper .report-left .report-subheading {
+        color: #5C8BD3;
+        font-size: 14px;
+        margin: 5px; }
+      .container .report-wrapper .report-left .report-img {
+        text-align: center;
+        width: 100%; }
+        .container .report-wrapper .report-left .report-img img {
+          width: 150px; }
+  .container .report-right {
+    width: 50%; }
+    .container .report-right .subscribe-button {
+      color: #FF9478; }
+    .container .report-right .form-wrapper {
+      margin: 10% 5% 5%;
+      /* .input-field input:focus + .email-label {
+        color: $light-blue;
+      }
+*/ }
+      .container .report-right .form-wrapper input[type=text] {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        line-height: 20px;
+        margin: 20px 0;
+        padding: 20px 0;
+        width: 80%; }
+      .container .report-right .form-wrapper .email-label {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%); }
+      .container .report-right .form-wrapper .input-field input:focus {
+        border-bottom: 1px solid #5C8BD3; }
+      .container .report-right .form-wrapper .flat-subscribe-button {
+        color: #5C8BD3; }
+      .container .report-right .form-wrapper .add-button {
+        background-color: #4742B7; }
 
 body,
 html {
@@ -2366,6 +2431,7 @@ input {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  color: #fff;
   font-size: 14px;
   line-height: 30px;
   height: 30px;
@@ -2380,3 +2446,9 @@ input {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase; }
+
+/*.inner-box {
+  background-color: $white;
+  padding: 10px;
+  width: 100%;
+}*/

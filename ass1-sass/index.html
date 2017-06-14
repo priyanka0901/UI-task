@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Assignment</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
     <div class="nav-wrapper">
         <nav class="navbar" role="navigation">
             <a href="#!" class="brand-logo left"><img src="img/logo.png"></a>
             <div class="menu left"><i class="fa fa-bars"></i></div>
             <div class="search-container left">
-            <form>
-                <label><i class="fa fa-search"></i></label>
-                <input type="search" name="search" placeholder="Lookup User">
-            </form>
-            <div class="clear"></div>
+                <form>
+                    <label><i class="fa fa-search"></i></label>
+                    <input type="search" name="search" placeholder="Lookup User">
+                </form>
+                <div class="clear"></div>
             </div>
         </nav>
     </div>
-
     <div class="sidebar">
         <div class="sidebar-heading">
             <div><span>J</span></div>
@@ -37,5 +38,36 @@
             <button class="flat-button sidebar-logout"><i class="fa fa-power-off"></i>Logout</button>
         </ul>
     </div>
+    <div class="container">
+        <div class="container-info">
+            <i class="fa fa-info-circle"></i>
+            <h3>Acme has 8 reports and <a href="#!">2 archived reports</a></h3>
+        </div>
+        <div class="report-wrapper">
+            <div class="report-left left">
+                <button class="button right report-button">Archive report</button>
+                <h2>Testing Report</h2>
+                <p class="report-subheading"><i class="fa fa-clock-o"></i>Next report on 5th April </p>
+                <div class="report-img">
+                    <img src="img/userReport.png">
+                </div>
+            </div>
+            <div class="report-right left">
+                <button class="flat-button right subscribe-button">10 subscribers</button>
+                <div class="form-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <label class="email-label" for="add_mail">Add members to your mailing list</label>
+                            <input type="text" placeholder="hello">
+                        </div>
+                        <button class="flat-button flat-subscribe-button">or add other subscribers</button>
+                        <button class="button right add-button">+ Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 </body>
+
 </html>
