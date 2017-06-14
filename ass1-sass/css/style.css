@@ -2234,8 +2234,9 @@
       width: 40%; }
       .nav-wrapper .navbar .search-container input[type=search] {
         background-color: #ecebeb;
-        margin-left: 10px;
-        width: 90%; }
+        margin-left: 10px; }
+    .nav-wrapper .navbar .search-container-mobile {
+      display: none; }
 
 .sidebar {
   background-color: #2e3a4d;
@@ -2299,6 +2300,7 @@
     padding: 10px;
     width: 100%; }
     .container .report-wrapper .report-left {
+      float: left;
       width: 50%; }
       .container .report-wrapper .report-left .report-button {
         background-color: #6B3A2B; }
@@ -2312,6 +2314,7 @@
         .container .report-wrapper .report-left .report-img img {
           width: 125px; }
   .container .report-right {
+    float: right;
     width: 50%; }
     .container .report-right .subscribe-button {
       color: #FF9478; }
@@ -2337,6 +2340,78 @@
         color: #5C8BD3; }
       .container .report-right .form-wrapper .add-button {
         background-color: #4742B7; }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .sidebar {
+    display: none; }
+  .container {
+    margin-left: 0;
+    width: 100%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+  .nav-wrapper {
+    height: 65px; }
+    .nav-wrapper .navbar .brand-logo img {
+      width: 150px; }
+    .nav-wrapper .navbar .menu {
+      margin: 15px 40px; }
+    .nav-wrapper .navbar .search-container {
+      margin: 14px; }
+  .container .report-wrapper .report-left h2 {
+    font-size: 16px; }
+  .container .report-wrapper .report-left .report-button {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .container .report-wrapper {
+    margin: 20px auto;
+    width: 80%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .nav-wrapper {
+    height: 55px; }
+    .nav-wrapper .navbar .brand-logo img {
+      width: 100px; }
+    .nav-wrapper .navbar .search-container {
+      display: none; }
+    .nav-wrapper .navbar .search-container-mobile {
+      display: block;
+      float: right; }
+      .nav-wrapper .navbar .search-container-mobile input[type=search] {
+        text-align: right; }
+    .nav-wrapper .navbar .menu {
+      margin: 10px 30px; }
+  .sidebar {
+    display: none; }
+    .sidebar .report-left h2 {
+      font-size: 18px; }
+  .container {
+    margin-left: 0;
+    width: 100%; }
+    .container .container-info {
+      padding: 10px 0; }
+      .container .container-info i {
+        font-size: 16px;
+        margin: 0 5px; }
+      .container .container-info h3 {
+        font-size: 14px; }
+    .container .report-wrapper .report-left {
+      float: none;
+      width: 100%; }
+      .container .report-wrapper .report-left h2 {
+        font-size: 16px; }
+      .container .report-wrapper .report-left .report-button {
+        font-size: 12px; }
+    .container .report-wrapper .report-right {
+      float: none;
+      width: 100%; }
+      .container .report-wrapper .report-right .subscribe-button {
+        font-size: 12px; }
+      .container .report-wrapper .report-right .form-wrapper input[type=text] {
+        margin: 10px 0;
+        padding: 10px 0; }
+      .container .report-wrapper .report-right .form-wrapper .flat-subscribe-button {
+        font-size: 12px; } }
 
 body,
 html {
