@@ -1,0 +1,53 @@
+//scss-lint:disable NestingDepth SelectorDepth
+//============Navbar Start============//
+
+.nav-wrapper {
+  box-shadow: 0 0 2px 2px $light-black;
+  height: 75px;
+  position: relative;
+
+  .navbar {
+    background-color: $transparent;
+    box-shadow: none;
+    padding: 0 3%;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+
+    .brand-logo {
+      float: left;
+
+      img {
+        margin-top: 10px;
+        width: 200px;
+      }
+    }
+
+    .menu {
+      margin: 22px 50px;
+
+      i {
+        font-size: 30px;
+      }
+    }
+
+    .search-container {
+      background-color: $light-brown;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin: 22px;
+      padding: 5px 10px;
+      width: 40%;
+
+      input[type=search] {
+        background-color: $light-brown;
+        margin-left: 10px;
+        width: 90%;
+      }
+    }
+  }
+}
+
+
+
+//============Nvabar Ends============//
