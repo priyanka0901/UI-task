@@ -2378,7 +2378,9 @@
       display: block;
       float: right; }
       .nav-wrapper .navbar .search-container-mobile input[type=search] {
-        text-align: right; }
+        margin: 15px 0;
+        text-align: right;
+        width: 100px; }
     .nav-wrapper .navbar .menu {
       margin: 10px 30px; }
   .sidebar {
