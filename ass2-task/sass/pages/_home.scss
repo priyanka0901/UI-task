@@ -79,7 +79,7 @@
 //===============Navbar Ends==========//
 
 //==============Sidebar==============//
-/*
+
 .sidebar {
   background-color: $cinder;
   color: $light-grey;
@@ -87,7 +87,52 @@
   padding: 20px 0;
   position: fixed;
   width: 250px;
-}*/
+
+  .user-info {
+    padding: 0 10px;
+    .user-img {
+      display: inline-block;
+
+      img {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    .user-name {
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: top;
+
+      i {
+        color: $green;
+        margin-right: 10px;
+      }
+    }
+
+    .search-container {
+      background-color: $input-black;
+      border-radius: 4px;
+      margin: 20px 0 10px;
+      padding: 6px 10px;
+
+      input {
+        background-color: $input-black;
+        width: 90%;
+      }
+    }
+  }
+
+  .sidebar-header {
+    background-color: $dark-black;
+    color: $dark-green;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
 
 
 
