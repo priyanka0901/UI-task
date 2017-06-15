@@ -45,7 +45,7 @@
     }
 
     .search-container-mobile {
-        display: none;
+      display: none;
     }
   }
 }
@@ -58,9 +58,9 @@
   background-color: $blue;
   color: $light-grey;
   height: 100%;
+  padding: 20px 0;
   position: fixed;
   width: 260px;
-  padding: 20px 0;
 
   .sidebar-heading {
     border-bottom: 1px solid $grey;
@@ -186,7 +186,7 @@
       margin: 10% 5% 5%;
 
         input[type=text] {
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid $border-grey;
           display: block;
           line-height: 20px;
           margin: 20px 0;
@@ -194,14 +194,14 @@
           width: 80%;
         }
 
-      .email-label {
+   /*   .email-label {
         transform: translateY(-100%);
       }
 
-     /* .input-field input:focus + .email-label {
+      .input-field input:focus + .email-label {
         color: $light-blue;
-      }
-*/
+      }*/
+
       .input-field input:focus {
         border-bottom: 1px solid $light-blue;
       }
@@ -256,13 +256,13 @@
 
   .container {
     .report-wrapper {
-       .report-left {
-          h2 {
-            font-size: $font-16;
-          }
+      .report-left {
+        h2 {
+          font-size: $font-16;
+        }
 
-          .report-button {
-            font-size: $font-12;
+        .report-button {
+          font-size: $font-12;
           }
         }
       }
@@ -292,19 +292,19 @@
       .search-container {
         display: none;
       }
+
       .search-container-mobile {
         display: block;
         float: right;
 
         input[type=search] {
-            margin: 15px 0;
-            text-align: right;
-            width: 100px;
+          margin: 15px 0;
+          text-align: right;
+          width: 100px;
         }
-
       }
 
-       .menu {
+      .menu {
         margin: 10px 30px;
       }
     }

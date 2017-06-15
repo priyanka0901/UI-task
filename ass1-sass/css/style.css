@@ -2242,9 +2242,9 @@
   background-color: #2e3a4d;
   color: #f7f7f7;
   height: 100%;
+  padding: 20px 0;
   position: fixed;
-  width: 260px;
-  padding: 20px 0; }
+  width: 260px; }
   .sidebar .sidebar-heading {
     border-bottom: 1px solid #4a5469;
     margin-bottom: 15px;
@@ -2292,7 +2292,7 @@
     .container .container-info h3 {
       display: inline-block; }
       .container .container-info h3 a {
-        color: #5C8BD3;
+        color: #5c8bd3;
         text-decoration: underline; }
   .container .report-wrapper {
     background-color: #fff;
@@ -2303,9 +2303,9 @@
       float: left;
       width: 50%; }
       .container .report-wrapper .report-left .report-button {
-        background-color: #6B3A2B; }
+        background-color: #6b3a2b; }
       .container .report-wrapper .report-left .report-subheading {
-        color: #5C8BD3;
+        color: #5c8bd3;
         font-size: 14px;
         margin: 5px; }
       .container .report-wrapper .report-left .report-img {
@@ -2317,13 +2317,16 @@
     float: right;
     width: 50%; }
     .container .report-right .subscribe-button {
-      color: #FF9478; }
+      color: #ff9478; }
     .container .report-right .form-wrapper {
       margin: 10% 5% 5%;
-      /* .input-field input:focus + .email-label {
-        color: $light-blue;
+      /*   .email-label {
+        transform: translateY(-100%);
       }
-*/ }
+
+      .input-field input:focus + .email-label {
+        color: $light-blue;
+      }*/ }
       .container .report-right .form-wrapper input[type=text] {
         border-bottom: 1px solid #ccc;
         display: block;
@@ -2331,15 +2334,12 @@
         margin: 20px 0;
         padding: 20px 0;
         width: 80%; }
-      .container .report-right .form-wrapper .email-label {
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%); }
       .container .report-right .form-wrapper .input-field input:focus {
-        border-bottom: 1px solid #5C8BD3; }
+        border-bottom: 1px solid #5c8bd3; }
       .container .report-right .form-wrapper .flat-subscribe-button {
-        color: #5C8BD3; }
+        color: #5c8bd3; }
       .container .report-right .form-wrapper .add-button {
-        background-color: #4742B7; }
+        background-color: #4742b7; }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   .sidebar {
@@ -2504,20 +2504,20 @@ input {
 
 .button {
   border: 0;
+  border-radius: 3px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
   color: #fff;
   font-size: 14px;
-  line-height: 30px;
   height: 30px;
+  line-height: 30px;
   outline: none;
   padding: 0 10px;
   text-transform: uppercase; }
 
 .flat-button {
-  border: 0;
   background-color: transparent;
+  border: 0;
   display: block;
   font-size: 14px;
   font-weight: 600;

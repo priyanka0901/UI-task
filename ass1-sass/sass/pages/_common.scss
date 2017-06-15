@@ -79,20 +79,20 @@ input {
 
 .button {
   border: 0;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 3px;
+  box-shadow: 0 4px 8px 0 $light-black;
   color: $white;
   font-size: 14px;
-  line-height: 30px;
   height: 30px;
+  line-height: 30px;
   outline: none;
   padding: 0 10px;
   text-transform: uppercase;
 }
 
 .flat-button {
-  border: 0;
   background-color: $transparent;
+  border: 0;
   display: block;
   font-size: 14px;
   font-weight: 600;
