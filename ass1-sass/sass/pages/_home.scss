@@ -80,23 +80,16 @@
   }
 
   .sidebar-options {
-
-    li {
+    a {
+      color: $light-grey;
+      display: block;
+      margin: 10px 0;
       padding: 10px;
 
-      a {
-        color: $light-grey;
-
-        i {
-          padding-right: 15px;
+      i {
+        padding-right: 15px;
         }
       }
-
-      &:hover {
-        background-color: $black;
-        border-left: 2px solid $white;
-      }
-    }
 
     .sidebar-logout {
       bottom: 90px;
@@ -109,6 +102,11 @@
       }
     }
   }
+}
+
+.sidebar-options a:hover {
+  background-color: $black;
+  border-left: 2px solid $white;
 }
 
 //==============Sidebar Ends=========//
