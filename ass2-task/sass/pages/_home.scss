@@ -1,0 +1,115 @@
+//scss-lint:disable NestingDepth SelectorDepth
+//============Navbar Start============//
+
+.nav-wrapper {
+  background-color: $blue;
+  box-shadow: 0 0 2px 2px $light-black;
+  height: 65px;
+  position: relative;
+
+  .navbar {
+    color: $white;
+    position: fixed;
+    width: 100%;
+
+    .brand-logo {
+      background-color: $dark-blue;
+      float: left;
+      height: 65px;
+      padding: 0 10px;
+      width: 250px;
+
+      img {
+        margin-top: 10px;
+        width: 200px;
+      }
+    }
+
+    .menu {
+      margin: 20px;
+
+      i {
+        font-size: 25px;
+      }
+    }
+
+    .navbar-options {
+      float: right;
+      margin: 25px;
+
+      li {
+        display: inline-block;
+        padding: 0 15px;
+
+        i {
+          font-size: 25px;
+          position: relative;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+     /*   img {
+          border-radius: 50%;
+          display: inline;
+          height: 24px;
+          width: 24px;
+        }*/
+      }
+      .badge-envelope::after {
+        background-color: $green;
+        border: 1px solid $green;
+        content: '4';
+      }
+
+      .badge-bell::after {
+        background-color: $orange;
+        border: 1px solid $orange;
+        content: '19';
+      }
+
+      .badge-flag::after {
+        background-color: $red;
+        border: 1px solid $red;
+        content: '10';
+      }
+    }
+  }
+}
+
+//===============Navbar Ends==========//
+
+//==============Sidebar==============//
+/*
+.sidebar {
+  background-color: $cinder;
+  color: $light-grey;
+  height: 100%;
+  padding: 20px 0;
+  position: fixed;
+  width: 250px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============sidebar Ends========//

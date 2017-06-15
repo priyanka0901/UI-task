@@ -82,7 +82,7 @@ input {
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 $light-black;
   color: $white;
-  font-size: 14px;
+  font-size: $font-14;
   height: 30px;
   line-height: 30px;
   outline: none;
@@ -94,8 +94,21 @@ input {
   background-color: $transparent;
   border: 0;
   display: block;
-  font-size: 14px;
+  font-size: $font-14;
   font-weight: 600;
   text-transform: uppercase;
 }
 
+.badge::after {
+  border-radius: 3px;
+  color: $white;
+  content: '';
+  font-size: $font-12;
+  height: 15px;
+  line-height: 15px;
+  position: absolute;
+  right: -5px;
+  text-align: center;
+  top: -8px;
+  width: 15px;
+}
