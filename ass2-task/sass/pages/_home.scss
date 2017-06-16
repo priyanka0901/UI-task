@@ -35,26 +35,32 @@
 
     .navbar-options {
       float: right;
-      margin: 25px;
+      margin: 10px 25px;
 
       li {
         display: inline-block;
         padding: 0 15px;
 
-        i {
-          font-size: 25px;
-          position: relative;
-          text-align: center;
-          vertical-align: middle;
-        }
+        a {
+          color: $white;
+          display: block;
 
-        img {
-          border-radius: 50%;
-          display: inline;
-          height: 24px;
-          width: 24px;
+          i {
+            font-size: 25px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+          }
+
+          img {
+            border-radius: 50%;
+            display: inline;
+            height: 30px;
+            width: 30px;
+          }
         }
       }
+
       .badge-envelope::after {
         background-color: $green;
         border: 1px solid $green;
