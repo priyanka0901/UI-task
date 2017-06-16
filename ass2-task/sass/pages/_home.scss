@@ -48,12 +48,12 @@
           vertical-align: middle;
         }
 
-     /*   img {
+        img {
           border-radius: 50%;
           display: inline;
           height: 24px;
           width: 24px;
-        }*/
+        }
       }
       .badge-envelope::after {
         background-color: $green;
@@ -132,9 +132,26 @@
     padding: 10px;
     text-transform: uppercase;
   }
+
+  .navigation-menu,
+  .label-menu {
+    a {
+      color: $font-black;
+      display: block;
+      margin: 5px 0;
+      padding: 5px 10px;
+
+      i {
+        padding-right: 15px;
+        }
+      }
+  }
 }
 
-
+.navigation-menu a:hover {
+  background-color: $black;
+  border-left: 2px solid $white;
+}
 
 
 
