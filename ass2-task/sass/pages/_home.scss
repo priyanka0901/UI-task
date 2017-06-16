@@ -519,6 +519,32 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
+  .nav-wrapper {
+    height: 55px;
+
+    .navbar {
+      .navbar-options {
+        margin: 10px;
+        li {
+          padding: 0 5px;
+          i {
+            font-size: 15px !important;
+          }
+        }
+        
+      }
+
+      .brand-logo {
+
+        width: 120px;
+
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
   .sidebar {
     display: none;
   }
@@ -529,7 +555,7 @@
 
     .dashboard-analysis {
       margin: 20px 15px;
-      width: 45%;
+      width: 40%;
     }
 
     .month-report {
@@ -568,7 +594,68 @@
 }
 
 
+@media only screen and (min-width:320px) and (max-width:450px) {
+  .nav-wrapper {
 
+    .navbar {
+      .user-name {
+        display: none;
+      }
+
+      .brand-logo {
+        padding: 20px 5px;
+        width: 80px;
+
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  .dashboard-container {
+    .dashboard-menu {
+      li {
+        padding: 0 !important;
+
+        a {
+          font-size: $font-12;
+        }
+      }
+    }
+
+    .dashboard-header {
+      span {
+        font-size: $font-12;
+        }
+      }
+
+    .dashboard-analysis {
+      margin: 20px 15px;
+      width: 80%;
+    }
+
+    .month-report {
+      .month-header {
+        h2 {
+          font-size: 15px;
+        }
+        .month-header-menu {
+          li {
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .data-report {
+
+    p {
+      font-size: $font-14 !important;
+    }
+  }
+}
 
 
 
