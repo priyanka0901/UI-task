@@ -160,24 +160,38 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //===============sidebar Ends========//
+
+//===============dashboard==========//
+
+
+.dashboard-container {
+  background-color: $background-white;
+  float: left;
+  height: 700px;
+  margin-left: 250px;
+  padding: 20px 10px;
+  width: 83%;
+
+  .dashboard-header {
+    span {
+      color: $font-black;
+      font-size: $font-14;
+    }
+  }
+
+  .dashboard-menu {
+    float: right;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+
+      a {
+        color: $font-black;
+      }
+    }
+  }
+}
+
+//===============dashboard ends======//
