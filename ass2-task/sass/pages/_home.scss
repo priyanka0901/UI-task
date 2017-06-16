@@ -97,6 +97,7 @@
 
   .user-info {
     padding: 0 10px;
+
     .user-img {
       display: inline-block;
 
@@ -228,7 +229,7 @@
   .month-report {
     background-color: $white;
     height: 100%;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
 
     .month-header {
@@ -265,7 +266,7 @@
       }
 
       img {
-        margin:30px 0 0;
+        margin: 30px 0 0;
         width: 100%;
       }
     }
@@ -301,6 +302,24 @@
           height: 15px;
           line-height: 15px;
           width: 75%;
+        }
+      }
+    }
+
+    .month-summary-wrapper {
+      border-top: 1px solid $border-grey;
+      width: 100%;
+
+      .month-summary {
+        display: inline-block;
+        margin: 10px 0;
+        text-align: center;
+        width: 24%;
+
+        h3 {
+          font-size: 18px;
+          margin: 5px 0;
+          text-transform: uppercase;
         }
       }
     }
@@ -379,9 +398,9 @@
       background-color: $transparent;
       float: left;
       height: 100px;
-      margin-top: 20px; 
+      margin-top: 20px;
       width: 40%;
-      
+
       .data-details {
         color: $white;
         height: 100%;
@@ -389,8 +408,8 @@
 
         .data-image {
           float: left;
-          line-height: 100px;
           height: 100px;
+          line-height: 100px;
           position: relative;
           text-align: center;
           width: 30%;
@@ -401,13 +420,13 @@
         }
 
         .overlay {
-          position: absolute;
           background-color: $light-black;
-          top: 0;
           bottom: 0;
-          left: 0;
-          right: 0;
           height: 100px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
 
         .data-report {
@@ -430,16 +449,16 @@
             width: 100%;
 
             div {
+              background-color: $white;
               height: 5px;
               line-height: 5px;
-              background-color: $white;
               width: 70%;
             }
           }
         }
       }
     }
-  } 
+  }
 }
 
 //===============dashboard ends======//
