@@ -168,7 +168,7 @@
 .dashboard-container {
   background-color: $background-white;
   float: left;
-  height: 700px;
+  height: 100%;
   margin-left: 250px;
   padding: 20px 10px;
   width: 83%;
@@ -197,14 +197,14 @@
     background: $white;
     display: inline-block;
     height: 100px;
-    margin: 20px 10px;
+    margin: 20px 20px 20px 0;
     width: 23%;
-    
-   .analysis-icon {
+
+    .analysis-icon {
       display: inline-block;
       height: 100%;
+      margin: auto;
       text-align: center;
-      margin: auto; 
       width: 35%;
 
       i {
@@ -218,8 +218,89 @@
       display: inline-block;
 
       h4 {
-        text-transform: uppercase;
         font-size: $font-16;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .month-report {
+    background-color: $white;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+
+    .month-header {
+      border-bottom: 1px solid $border-grey;
+      padding: 10px 0;
+
+      h2 {
+        font-size: $font-20;
+      }
+
+      .month-header-menu {
+        float: right;
+
+        li {
+          display: inline-block;
+          padding: 0 10px;
+
+          i {
+            color: $border-grey;
+          }
+        }
+      }
+    }
+
+    .month-graph {
+      float: left;
+      height: 100%;
+      padding: 10px;
+      width: 60%;
+
+      h3 {
+        font-size: $font-16;
+        text-align: center;
+      }
+
+      img {
+        margin:30px 0 0;
+        width: 100%;
+      }
+    }
+
+    .month-analysis-bar {
+      float: left;
+      height: 100%;
+      padding: 10px;
+      width: 40%;
+
+      h3 {
+        font-size: $font-16;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .progress-header {
+        margin: 10px 0;
+        text-transform: capitalize;
+
+        span {
+          float: right;
+        }
+      }
+
+      .progress-bars {
+        background-color: $border-grey;
+        height: 15px;
+        line-height: 15px;
+        width: 100%;
+
+        div {
+          height: 15px;
+          line-height: 15px;
+          width: 75%;
+        }
       }
     }
   }
