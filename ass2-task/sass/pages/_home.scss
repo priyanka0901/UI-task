@@ -397,13 +397,13 @@
     .visitors-data {
       background-color: $transparent;
       float: left;
-      height: 100px;
+      height: 100%;
       margin-top: 20px;
       width: 40%;
 
       .data-details {
         color: $white;
-        height: 100%;
+        height: 100px;
         margin: 0 0 10px 20px;
 
         .data-image {
@@ -462,3 +462,27 @@
 }
 
 //===============dashboard ends======//
+
+//===============media queries======//
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===========media queries ends=======//
