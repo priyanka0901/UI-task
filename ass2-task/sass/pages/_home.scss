@@ -218,6 +218,7 @@
 
     .analysis-value {
       display: inline-block;
+      width: 62%;
 
       h4 {
         font-size: $font-16;
@@ -464,18 +465,107 @@
 //===============dashboard ends======//
 
 //===============media queries======//
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+  .dashboard-container {
+
+    .dashboard-analysis {
+      width: 22%;
+
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+
+
+}
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
   .sidebar {
     display: none;
   }
+
+  .dashboard-container {
+    margin-left: 0;
+    width: 100%;
+
+    .dashboard-analysis {
+      width: 22%;
+
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
 }
 
 
+@media only screen and (min-width:768px) and (max-width:810px) {
+  .dashboard-container {
+    .dashboard-analysis {
+      width: 21%;
 
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+}
 
+@media only screen and (min-width:320px) and (max-width:767px) {
+  .sidebar {
+    display: none;
+  }
 
+  .dashboard-container {
+    margin-left: 0;
+    width: 100%;
 
+    .dashboard-analysis {
+      margin: 20px 15px;
+      width: 45%;
+    }
+
+    .month-report {
+      margin: auto;
+      width: 95%;
+
+      .month-graph {
+        width: 100%;
+      }
+
+      .month-analysis-bar {
+        width: 100%;
+      }
+
+      .month-summary-wrapper {
+        .month-summary {
+          border-right: 0;
+          width: 49%;
+        } 
+      }
+    }
+
+    .visitors-section {
+      margin: auto;
+      width: 95%;
+
+      .visitors-report {
+        width: 100%;
+      }
+
+      .visitors-data {
+        width: 100%;
+      }
+    }
+  }
+}
 
 
 
