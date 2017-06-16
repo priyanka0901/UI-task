@@ -192,6 +192,37 @@
       }
     }
   }
+
+  .dashboard-analysis {
+    background: $white;
+    display: inline-block;
+    height: 100px;
+    margin: 20px 10px;
+    width: 23%;
+    
+   .analysis-icon {
+      display: inline-block;
+      height: 100%;
+      text-align: center;
+      margin: auto; 
+      width: 35%;
+
+      i {
+        color: $white;
+        font-size: 35px;
+        margin: 30px 0;
+      }
+    }
+
+    .analysis-value {
+      display: inline-block;
+
+      h4 {
+        text-transform: uppercase;
+        font-size: $font-16;
+      }
+    }
+  }
 }
 
 //===============dashboard ends======//
