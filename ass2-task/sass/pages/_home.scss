@@ -525,17 +525,17 @@
     .navbar {
       .navbar-options {
         margin: 10px;
+
         li {
           padding: 0 5px;
+
           i {
             font-size: 15px !important;
           }
         }
-        
       }
 
       .brand-logo {
-
         width: 120px;
 
         img {
@@ -574,7 +574,7 @@
         .month-summary {
           border-right: 0;
           width: 49%;
-        } 
+        }
       }
     }
 
@@ -640,6 +640,7 @@
         h2 {
           font-size: 15px;
         }
+
         .month-header-menu {
           li {
             padding: 0 5px;
@@ -650,7 +651,6 @@
   }
 
   .data-report {
-
     p {
       font-size: $font-14 !important;
     }
