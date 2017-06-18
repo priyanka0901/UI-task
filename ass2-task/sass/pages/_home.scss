@@ -317,6 +317,11 @@
         text-align: center;
         width: 24%;
 
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-right: 1px solid $border-grey;
+        }
         h3 {
           font-size: 18px;
           margin: 5px 0;
@@ -572,8 +577,11 @@
 
       .month-summary-wrapper {
         .month-summary {
-          border-right: 0;
           width: 49%;
+
+          &:nth-child(2) {
+            border-right: 0;
+          }
         }
       }
     }
