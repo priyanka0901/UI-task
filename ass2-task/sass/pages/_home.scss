@@ -375,7 +375,10 @@
       float: left;
       width: 70%;
 
-      img {
+      div {
+        background-image: url('../img/map.png');
+        background-position: center;
+        background-size: cover;
         height: 333px;
         width: 100%;
       }
