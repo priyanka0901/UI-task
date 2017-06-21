@@ -17,12 +17,8 @@
   },
   "homepage": "https://github.com/priyanka0901/UI-task#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-deporder": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-strip-debug": "^1.1.0",
-    "gulp-uglify": "^3.0.0"
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
