@@ -224,16 +224,17 @@
           border-bottom: 1px solid $border-grey;
           display: block;
           line-height: 20px;
+          margin-bottom: 20px;
           width: 80%;
         }
 
       .margin {
         margin: 20px 0;
-        padding: 20px 0;
+        padding-top: 20px;
       }
 
       .input-wrapper {
-        margin: 30px 10px 15px;
+        margin: 30px 15px 15px 0;
 
         .user-input {
           background-color: $grey-shade;
@@ -249,7 +250,7 @@
             font-size: $font-14;
           }
 
-          span {
+          i {
             background-color: $light-black;
             border-radius: 20px;
             color: $white;
