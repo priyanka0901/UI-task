@@ -25,6 +25,7 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
-grunt.registerTask('default', ['sass']);
+grunt.registerTask('default', ['watch','sass']);
+
 
 };

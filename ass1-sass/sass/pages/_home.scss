@@ -5,10 +5,13 @@
   box-shadow: 0 0 2px 2px $light-black;
   height: 75px;
   position: relative;
+  z-index: 100;
 
   .navbar {
     background-color: $white;
-    padding: 0 3%;
+    box-shadow: 0 0 2px 2px $light-black;
+    height: 75px;
+    padding: 0 20px;
     position: fixed;
     text-transform: uppercase;
     width: 100%;
@@ -34,13 +37,17 @@
       background-color: $light-brown;
       border-radius: 3px;
       box-sizing: border-box;
-      margin: 22px;
+      margin: 18px;
       padding: 5px 10px;
       width: 40%;
 
-      input[type=search] {
-        background-color: $light-brown;
-        margin-left: 10px;
+      form {
+        line-height: 30px;
+        margin-bottom: 0;
+        input[type=search] {
+          background-color: $light-brown;
+          margin-left: 10px;
+        }
       }
     }
 
@@ -80,33 +87,53 @@
   }
 
   .sidebar-options {
-    a {
-      color: $light-grey;
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
+    li {
+      line-height: 48px;
 
-      i {
-        padding-right: 15px;
+      a {
+        color: $light-grey;
+        display: block;
+        line-height: 25px;
+        padding: 10px;
+
+        i {
+          padding-right: 15px;
+          }
         }
       }
+    }
 
-    .sidebar-logout {
-      bottom: 90px;
-      color: $light-grey;
-      position: absolute;
-      text-transform: uppercase;
+  .sidebar-logout {
+    bottom: 90px;
+    display: block;
+    position: absolute;
+    width: 100%;
 
-      i {
-        margin: 0 10px;
+    li {
+      line-height: 48px;
+
+      button {
+        color: $light-grey;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+
+        i {
+          margin: 0 10px;
+        }
       }
     }
   }
 }
 
-.sidebar-options a:hover {
+
+.sidebar-options a:active {
   background-color: $black;
   border-left: 2px solid $white;
+}
+
+.sidebar-options a:hover {
+  background-color: $black;
 }
 
 //==============Sidebar Ends=========//
@@ -115,10 +142,9 @@
 
 .container {
   background-color: $background-white;
-  float: left;
   margin-left: 260px;
   padding: 5px;
-  width: 82%;
+  position: relative;
 
   .container-info {
     background-color: $white;
