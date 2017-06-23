@@ -104,7 +104,7 @@
     }
 
   .sidebar-logout {
-    bottom: 90px;
+    bottom: 70px;
     display: block;
     position: absolute;
     width: 100%;
@@ -114,6 +114,8 @@
 
       button {
         color: $light-grey;
+        line-height: 35px;
+        padding: 10px 0;
         text-align: left;
         text-transform: uppercase;
         width: 100%;
@@ -132,7 +134,8 @@
   border-left: 2px solid $white;
 }
 
-.sidebar-options a:hover {
+.sidebar-options a:hover,
+.sidebar-logout button:hover {
   background-color: $black;
 }
 
@@ -185,6 +188,10 @@
         color: $light-blue;
         font-size: $font-14;
         margin: 5px;
+
+        i {
+          margin-right: 5px;
+        }
       }
 
       .report-img {
@@ -213,10 +220,44 @@
           border-bottom: 1px solid $border-grey;
           display: block;
           line-height: 20px;
-          margin: 20px 0;
-          padding: 20px 0;
           width: 80%;
         }
+
+      .margin {
+        padding: 20px 0;
+        margin: 20px 0;
+      }
+
+      .input-wrapper {
+        margin: 30px 10px 15px;
+
+        .user-input {
+          background-color: $grey-shade;
+          border-radius: 20px;
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          width: 110px;
+
+          p {
+            display: inline-block;
+            font-size: $font-14;
+          }
+
+          span {
+            background-color: $light-black;
+            border-radius: 20px;
+            color: $white;
+            display: inline-block;
+            font-size: 15px;
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+          }
+        }
+      }
+      
 
    /*   .email-label {
         transform: translateY(-100%);
