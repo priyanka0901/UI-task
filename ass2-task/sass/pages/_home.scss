@@ -227,11 +227,13 @@
     }
   }
 
+  .dash-wrapper {
+    text-align: center;
   .dashboard-analysis {
     background: $white;
     display: inline-block;
     height: 100px;
-    margin: 20px 20px 20px 0;
+    margin: 20px 10px 20px 0;
     width: 23%;
 
     .analysis-icon {
@@ -258,6 +260,7 @@
       }
     }
   }
+}
 
   .month-report {
     background-color: $white;
@@ -509,9 +512,8 @@
 //===============media queries======//
 @media only screen and (min-width:1024px) and (max-width:1440px) {
   .dashboard-container {
-
     .dashboard-analysis {
-      width: 23%;
+      margin: 20px 5px 20px 0;
 
       .analysis-value {
         h4 {
@@ -520,8 +522,6 @@
       }
     }
   }
-
-
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
@@ -595,8 +595,8 @@
     width: 100%;
 
     .dashboard-analysis {
-      margin: 20px 15px;
-      width: 40%;
+      margin: 20px 15px $important;
+      width: 40% $important;
     }
 
     .month-report {
@@ -614,7 +614,9 @@
       .month-summary-wrapper {
         .month-summary {
           width: 49%;
-
+          h3 {
+            font-size: $font-14;
+          }
           &:nth-child(2) {
             border-right: 0;
           }
@@ -632,6 +634,16 @@
 
       .visitors-data {
         width: 100%;
+        .data-details {
+          margin-left: 0 $important;
+        }
+      }
+      .map-analysis {
+        .map-data {
+          h2 {
+            font-size: $font-14;
+          }
+        }
       }
     }
   }
@@ -650,7 +662,7 @@
         margin: 0 5px;
 
         .user-name {
-          display: none !important;
+          display: none $important;
         }
 
         .brand-logo {
@@ -669,7 +681,7 @@
   .dashboard-container {
     .dashboard-menu {
       li {
-        padding: 0 !important;
+        padding: 0 $important;
 
         a {
           font-size: $font-12;
@@ -684,8 +696,8 @@
       }
 
     .dashboard-analysis {
-      margin: 20px 15px;
-      width: 80%;
+      margin: 20px 15px $important;
+      width: 80% $important;
     }
 
     .month-report {
@@ -705,7 +717,7 @@
 
   .data-report {
     p {
-      font-size: $font-14 !important;
+      font-size: $font-14 $important;
     }
   }
 }
