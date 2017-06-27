@@ -157,6 +157,10 @@
       width: 100%;
     }
   }
+  
+  .label-menu {
+    margin-bottom: 50px;
+  }
 
   .navigation-menu,
   .label-menu {
@@ -224,7 +228,9 @@
   background-color: $background-white;
   height: 100%;
   margin-left: 250px;
+  overflow-y: auto;
   padding: 20px 10px;
+  padding-bottom: 100px;
 
   .dashboard-header {
     span {
@@ -288,7 +294,6 @@
     background-color: $white;
     border-bottom: 2px solid $border-grey;
     border-top: 3px solid $border-grey;
-    height: 100%;
     padding: 10px 0;
     width: 100%;
 
