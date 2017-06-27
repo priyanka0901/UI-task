@@ -185,11 +185,26 @@
         font-size: $font-14;
         line-height: 25px;
         padding: 0 10px;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+
+  .navi-submenu {
+    background-color: $menu;
+    li {
+      a {
+        color: $white;
+        line-height: 30px;
       }
     }
   }
 }
-
+.navi-submenu a:hover {
+  color: $dark-blue $important;
+  background-color: $menu $important;
+}
 .navigation-menu a:active {
   background-color: $black;
   border-left: 2px solid $white;
@@ -471,7 +486,8 @@
           width: 30%;
 
           i {
-            font-size: $font-30;
+            font-size: $font-40;
+            margin-top: 30px;
           }
         }
 
