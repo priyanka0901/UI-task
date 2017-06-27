@@ -192,7 +192,7 @@
       .report-subheading {
         color: $light-blue;
         font-size: $font-14;
-        margin: 5px;
+        margin: 5px 0;
 
         i {
           margin-right: 5px;
@@ -200,6 +200,7 @@
       }
 
       .report-img {
+        margin-top: 20px;
         text-align: center;
         width: 100%;
 
@@ -311,31 +312,27 @@
 }
 
 @media only screen and (min-width:450px) and (max-width:766px) {
-  .search-container-mobile {
+  form {
     input[type=search] {
-      width: 200px !important;
+      width: 85% $important;
     }
   }
-
-  .container {
-    .container-info {
-      margin: auto;
-      width: 80%;
-    }
-
-    .report-wrapper {
-      margin: 20px auto;
-      width: 80%;
-    }
+  navbar {
+    padding: 0 10px $important;
   }
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
+  .margin-80 {
+    margin-top: 0;
+  }
+
   .nav-wrapper {
     height: 55px;
 
     .navbar {
       height: 55px;
+      padding: 0 5px;
 
       .brand-logo {
         img {
@@ -343,24 +340,24 @@
         }
       }
 
-      .search-container {
-        display: none;
-      }
+      .menu {
+        margin: 17px 20px;
 
-      .search-container-mobile {
-        border-bottom: 1px solid $light-black;
-        display: block;
-        float: right;
-
-        input[type=search] {
-          margin: 12px 0 5px;
-          text-align: right;
-          width: 100px;
+        i {
+          font-size: $font-20;
         }
       }
 
-      .menu {
-        margin: 10px 25px;
+      .search-container {
+        margin: 12px 0;
+        padding: 0 5px;
+
+        form {
+          input[type=search] {
+            font-size: $font-14;
+            width: 75%;
+          }
+        }
       }
     }
   }
@@ -403,7 +400,8 @@
         }
 
         .report-button {
-          font-size: $font-12;
+          font-size: 10px;
+          padding: 0 5px;
           }
         }
 
@@ -416,10 +414,20 @@
         }
 
         .form-wrapper {
+          margin: 0;
           input[type=text] {
             margin: 10px 0;
-            padding: 10px 0;
+            padding: 0;
+            width: 100%;
             }
+
+          .input-wrapper {
+            margin: 15px 15px 15px 0;
+          }
+
+          .input-field {
+            margin-top: 30px;
+          }
 
           .flat-subscribe-button {
             font-size: $font-12;
@@ -430,8 +438,11 @@
     }
   }
 
-
-
+@media only screen and (min-width:320px) and (max-width:349px) {
+  .search-container {
+    width: 45% $important;
+  }
+}
 
 
 
