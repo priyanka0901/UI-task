@@ -26,7 +26,7 @@
     }
 
     .menu {
-      margin: 22px 50px;
+      margin:22px 40px 22px 50px;
 
       i {
         font-size: 30px;
@@ -37,7 +37,7 @@
       background-color: $light-brown;
       border-radius: 3px;
       box-sizing: border-box;
-      margin: 18px;
+      margin: 18px 0;
       padding: 5px 10px;
       width: 50%;
 
@@ -152,6 +152,7 @@
   margin-left: 260px;
   overflow-y: auto;
   padding: 5px;
+  padding-bottom: 100px;
   position: relative;
 
   .container-info {
@@ -289,7 +290,8 @@
 
       .add-button {
         background-color: $dark-blue;
-       
+        left: 25px;
+        position: relative;
       }
     }
   }
