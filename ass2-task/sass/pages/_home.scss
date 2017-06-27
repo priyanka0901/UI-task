@@ -257,38 +257,50 @@
   }
 
   .dash-wrapper {
-  .dashboard-analysis {
-    background: $white;
-    display: inline-block;
-    height: 100px;
-    margin: 20px 10px 20px 0;
-    width: 23%;
+    margin: 30px 0;
 
-    .analysis-icon {
+    .analysis-wrapper {
+      background-color: $background-white;
       display: inline-block;
-      height: 100%;
-      margin: auto;
-      text-align: center;
-      width: 35%;
+      margin-right: -4px;
+      padding-right: 15px;
+      width: 25%;
 
-      i {
-        color: $white;
-        font-size: 35px;
-        margin: 30px 0;
-      }
-    }
+      .dashboard-analysis {
+        background: $white;
+        height: 100px;
+        width: 100%;
 
-    .analysis-value {
-      display: inline-block;
-      width: 62%;
+        .analysis-icon {
+          display: inline-block;
+          height: 100%;
+          margin: auto;
+          text-align: center;
+          width: 35%;
 
-      h4 {
-        font-size: $font-16;
-        text-transform: uppercase;
+          i {
+            color: $white;
+            font-size: 35px;
+            margin: 30px 0;
+          }
+        }
+
+        .analysis-value {
+          display: inline-block;
+          width: 62%;
+
+          h4 {
+            font-size: $font-16;
+            text-transform: uppercase;
+          }
+        }
       }
     }
   }
-}
+  
+  .dash-wrapper .analysis-wrapper:nth-child(4) {
+    padding-right: 0 $important;
+  }
 
   .month-report {
     background-color: $white;
@@ -379,8 +391,9 @@
       .month-summary {
         display: inline-block;
         margin: 10px 0;
+        margin-right: -4px;
         text-align: center;
-        width: 24%;
+        width: 25%;
 
         &:nth-child(1),
         &:nth-child(2),
@@ -544,7 +557,6 @@
 @media only screen and (min-width:1024px) and (max-width:1440px) {
   .dashboard-container {
     .dashboard-analysis {
-      margin: 20px 5px 20px 0;
 
       .analysis-value {
         h4 {
@@ -625,14 +637,15 @@
     margin-left: 0;
     width: 100%;
 
-    .dashboard-analysis {
-      margin: 20px 15px $important;
-      width: 40% $important;
+    .dash-wrapper {
+      margin: 10px 0 30px;
+      .analysis-wrapper {
+        width: 50% $important;
+      }
     }
+    
 
     .month-report {
-      margin: auto;
-      width: 95%;
 
       .month-graph {
         width: 100%;
@@ -656,9 +669,9 @@
     }
 
     .visitors-section {
-      margin: auto;
-      width: 95%;
-
+      .map-data {
+        margin: 30px 0 38px $important;
+      }
       .visitors-report {
         width: 100%;
       }
@@ -677,6 +690,14 @@
         }
       }
     }
+  }
+  .dash-wrapper .analysis-wrapper:nth-child(1),
+  .dash-wrapper .analysis-wrapper:nth-child(3) {
+    padding-right: 30px $important;
+  }
+  .dash-wrapper .analysis-wrapper:nth-child(2) {
+    padding: 20px 0;
+    padding-right: 0 $important;
   }
 }
 
@@ -710,6 +731,11 @@
   }
 
   .dashboard-container {
+    .dash-wrapper {
+      .analysis-wrapper {
+        width: 100% !important;
+      }
+    }
     .dashboard-menu {
       li {
         padding: 0 $important;
@@ -725,11 +751,6 @@
         font-size: $font-10;
         }
       }
-
-    .dashboard-analysis {
-      margin: 20px 15px $important;
-      width: 80% $important;
-    }
 
     .month-report {
       .month-header {
@@ -750,6 +771,15 @@
     p {
       font-size: $font-14 $important;
     }
+  }
+
+  .dash-wrapper .analysis-wrapper:nth-child(1),
+  .dash-wrapper .analysis-wrapper:nth-child(3) {
+    padding-right: 0 $important;
+  }
+
+  .dash-wrapper .analysis-wrapper:nth-child(4) {
+    margin-top: 20px;
   }
 }
 
