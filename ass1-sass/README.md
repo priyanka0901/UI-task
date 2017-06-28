@@ -1,2 +1,0 @@
-Assignment based on sass
-=======================
