@@ -102,6 +102,7 @@
   height: 100%;
   overflow-y: auto;
   padding: 20px 0;
+  padding-bottom: 60px;
   position: fixed;
   width: 250px;
 
@@ -158,10 +159,6 @@
     }
   }
   
-  .label-menu {
-    margin-bottom: 50px;
-  }
-
   .navigation-menu,
   .label-menu {
     a {
@@ -192,6 +189,15 @@
         position: relative;
         top: 5px;
       }
+
+      &:hover {
+        background-color: $black;
+      }
+
+      &:active {
+        background-color: $black;
+        border-left: 2px solid $white;
+      }
     }
   }
 
@@ -201,21 +207,14 @@
       a {
         color: $white;
         line-height: 30px;
+
+        &:hover {
+          color: $dark-blue $important;
+          background-color: $menu $important;
+        }
       }
     }
   }
-}
-.navi-submenu a:hover {
-  color: $dark-blue $important;
-  background-color: $menu $important;
-}
-.navigation-menu a:active {
-  background-color: $black;
-  border-left: 2px solid $white;
-}
-
-.navigation-menu a:hover {
-  background-color: $black;
 }
 
 
