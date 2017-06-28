@@ -171,11 +171,11 @@
       margin: 5px 0;
       padding: 5px 20px;
 
-      i:nth-child(1) {
+      .left-icon {
         padding-right: 15px;
       }
 
-      i:nth-child(2) {
+      .right-icon {
         float: right;
         font-size: 20px;
         position: relative;
