@@ -1,0 +1,160 @@
+body,
+html {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+button,
+input,
+select,
+textarea,
+table tr td {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.navbar {
+  background-color: #FA7207;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-options li {
+  display: inline-block;
+}
+
+.menu {
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+
+.menu:hover {
+  color: #f9f9f9;
+}
+
+.container {
+  background-color: #fff;
+  padding: 6% 1% 2%;
+  margin: auto;
+  width: 100%;
+}
+
+.content-layout {
+  float: left;
+  height: 100%;
+  margin: 0 5px;
+  padding: 0 10px;
+  width: 47%;
+}
+
+.red {
+  background-color: #FF003C;
+}
+
+.blue {
+  background-color: #00C1D7;
+}
+
+.horizontal-content {
+  background-color: #8D00FE;
+  height: 200px;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.horizontal-content h1 {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.vertical-content {
+  background-image: url("../img/bg.png");
+  float: left;
+  height: 370px;
+  margin: 30px 20px;
+  position: relative;
+  width: 43%;
+}
+
+.vertical-content h1 {
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.footer {
+  height: 100%;
+  margin: 0 20px;
+  width: 100%; 
+}
+
+.footer div {
+  background-color: #FF003C;
+  float: left;
+  height: 230px;
+  width: 30%;
+  margin: 0 15px;
+}
