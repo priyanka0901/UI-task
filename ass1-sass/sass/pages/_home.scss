@@ -1,0 +1,448 @@
+//============Navbar Start============//
+
+.nav-wrapper {
+  box-shadow: 0 0 2px 2px $light-black;
+  height: 75px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+
+  .navbar {
+    background-color: $white;
+    box-shadow: 0 0 2px 2px $light-black;
+    height: 75px;
+    padding: 0 20px;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+
+    .brand-logo {
+      float: left;
+
+      img {
+        margin-top: 10px;
+        width: 200px;
+      }
+    }
+
+    .menu {
+      margin:22px 40px 22px 50px;
+
+      i {
+        font-size: 30px;
+      }
+    }
+
+    .search-container {
+      background-color: $light-brown;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin: 18px 0;
+      padding: 5px 10px;
+      width: 50%;
+
+      form {
+        line-height: 30px;
+        margin-bottom: 0;
+
+        input[type=search] {
+          background-color: $light-brown;
+          margin-left: 10px;
+          width: 90%;
+        }
+      }
+    }
+
+    .search-container-mobile {
+      display: none;
+    }
+  }
+}
+
+//============Navbar Ends============//
+
+//=============Sidebar===============//
+
+.sidebar {
+  background-color: $blue;
+  color: $light-grey;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  position: fixed;
+  width: 260px;
+
+  .sidebar-heading {
+    border-bottom: 1px solid $grey;
+    margin: 0 20px 0;
+    padding-bottom: 20px;
+
+    .sidebar-border {
+      border: 2px solid $white;
+      border-radius: 50%;
+      font-size: 20px;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 50px;
+
+      span {
+        font-size: $font-30;
+      }
+      h2 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .sidebar-options {
+    li {
+      line-height: 48px;
+
+      a {
+        color: $light-grey;
+        display: block;
+        line-height: 25px;
+        padding: 10px 20px;
+
+        i {
+          padding-right: 15px;
+          }
+
+          &:active {
+            background-color: $black;
+            border-left: 2px solid $white;
+          }
+          &:hover {
+            background-color: $black;
+          }
+        }
+      }
+    }
+
+  .sidebar-logout {
+    bottom: 70px;
+    display: block;
+    position: absolute;
+    width: 100%;
+
+    li {
+      display: block;
+      line-height: 48px;
+
+      button {
+        color: $light-grey;
+        line-height: 35px;
+        padding: 10px 10px;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+
+        i {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+
+//==============Sidebar Ends=========//
+
+//==============Container============//
+
+.container {
+  background-color: $background-white;
+  height: 100%;
+  margin-left: 260px;
+  overflow-y: auto;
+  padding: 5px;
+  padding-bottom: 100px;
+  position: relative;
+
+  .container-info {
+    background-color: $white;
+    line-height: 40px;
+    padding: 10px;
+    width: 100%;
+
+    i {
+      font-size: $font-24;
+      margin: 0 10px;
+   }
+
+    h3 {
+      display: inline-block;
+
+      a {
+        color: $light-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .report-wrapper {
+    background-color: $white;
+    margin: 5px 0;
+    padding: 15px;
+    width: 100%;
+
+    .report-left {
+      float: left;
+      width: 50%;
+
+      .report-button {
+        background-color: $brown;
+      }
+
+      .report-subheading {
+        color: $light-blue;
+        font-size: $font-14;
+        margin: 5px 0;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      .report-img {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+
+        img {
+          width: 135px;
+        }
+      }
+    }
+  }
+
+  .report-right {
+    float: right;
+    width: 50%;
+
+    .subscribe-button {
+      color: $orange;
+    }
+
+    .form-wrapper {
+      margin-top: 10%;
+        
+        form {
+          margin-bottom: 0;
+        }
+
+        label {
+          line-height: 30px;
+        }
+        input[type=text] {
+          border-bottom: 1px solid $border-grey;
+          display: block;
+          line-height: 20px;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+
+      .margin {
+        margin: 20px 0;
+        padding-top: 30px;
+      }
+
+      .input-wrapper {
+        margin: 30px 15px 15px 0;
+
+        .user-input {
+          background-color: $grey-shade;
+          border-radius: 20px;
+          display: inline-block;
+          font-size: $font-14;
+          height: 30px;
+          line-height: 30px;
+          margin: 5px 0;
+          text-align: center;
+          width: 100px;
+          
+          a {
+            float: right;
+            position: relative;
+            right: 5px;
+            top: 5px;
+          }
+
+          i {
+            background-color: $light-black;
+            border-radius: 20px;
+            color: $white;
+            font-size: 15px;
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+          }
+        }
+      }
+
+      .input-field input:focus {
+        border-bottom: 1px solid $light-blue;
+      }
+
+      .flat-subscribe-button {
+        color: $light-blue;
+        display: inline-block;
+      }
+
+      .add-button {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+
+
+//===============Container Ends=======//
+
+//===============Media queries =========//
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:450px) and (max-width:766px) {
+  form {
+    input[type=search] {
+      width: 85% $important;
+    }
+  }
+  navbar {
+    padding: 0 10px $important;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+  .margin-80 {
+    margin-top: 0;
+  }
+
+  .nav-wrapper {
+    height: 55px;
+
+    .navbar {
+      height: 55px;
+      padding: 0 5px;
+
+      .brand-logo {
+        img {
+          width: 100px;
+        }
+      }
+
+      .menu {
+        margin: 17px 20px;
+
+        i {
+          font-size: $font-20;
+        }
+      }
+
+      .search-container {
+        margin: 12px 0;
+        padding: 0 5px;
+
+        form {
+          input[type=search] {
+            font-size: $font-14;
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+
+    .report-left {
+
+      h2 {
+        font-size: $font-18;
+      }
+    }
+  }
+
+  .container {
+    margin-left: 0;
+    width: 100%;
+
+    .container-info {
+      padding: 10px 0;
+
+      i {
+        font-size: $font-16;
+        margin: 0 5px;
+      }
+
+      h3 {
+        font-size: $font-14;
+      }
+    }
+
+    .report-wrapper {
+      .report-left {
+        float: none;
+        width: 100%;
+
+        h2 {
+          font-size: $font-16;
+        }
+
+        .report-button {
+          font-size: 10px;
+          padding: 0 5px;
+          }
+        }
+
+      .report-right {
+        float: none;
+        width: 100%;
+
+        .subscribe-button {
+          font-size: $font-12;
+        }
+
+        .form-wrapper {
+          margin: 0;
+          input[type=text] {
+            margin: 10px 0;
+            padding: 0;
+            width: 100%;
+            }
+
+          .input-wrapper {
+            margin: 15px 15px 15px 0;
+          }
+
+          .input-field {
+            margin-top: 30px;
+          }
+
+          .flat-subscribe-button {
+            font-size: $font-12;
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media only screen and (min-width:320px) and (max-width:349px) {
+  .search-container {
+    width: 45% $important;
+  }
+}
