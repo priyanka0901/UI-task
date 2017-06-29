@@ -262,12 +262,18 @@
           margin: 5px 0;
           text-align: center;
           width: 100px;
+          
+          a {
+            float: right;
+            position: relative;
+            right: 5px;
+            top: 5px;
+          }
 
           i {
             background-color: $light-black;
             border-radius: 20px;
             color: $white;
-            display: inline-block;
             font-size: 15px;
             height: 20px;
             line-height: 20px;
