@@ -1,0 +1,110 @@
+//=========font-family==========//
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Regular.wof2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Medium.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Medium.wof2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../fonts/roboto/Roboto-Thin.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Thin.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Thin.woff2') format('woff2');
+  font-weight: 200;
+}
+
+
+
+//==========color============//
+$important: !important;
+$transparent: transparent;
+$white: #fff;
+$background-white: #eee;
+$black: #000;
+$border-grey: #ccc;
+$light-grey: #f7f7f7;
+$light-black: rgba(0, 0, 0, .2);
+$blue: #218dbf;
+$dark-blue: #1e7faa;
+$green: #00B05B;
+$orange: #FD9800;
+$red: #EE2623;
+$light-blue: #00C2F2;
+$cinder: #202D31;
+$input-black: #344851;
+$dark-black: #182225;
+$dark-green: #213B4B;
+$font-black: #aaa;
+$menu: #293B43;
+
+
+//=========fonts============//
+$font-40: 40px;
+$font-30: 30px;
+$font-24: 24px;
+$font-22: 22px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-14: 14px;
+$font-12: 12px;
+$font-10: 10px;
+
+//========color class generator=======//
+$example: (
+  "base":       #f00
+);
+
+$tag-status: (
+  "red": #ee2623,
+  "blue": #218dbf,
+  "orange": #FD9800,
+  "green": #00B05B,
+);
+
+$colors: (
+  "example": $example,
+  "tag-status": $tag-status
+);
+
+
+// Color Classes
+@each $color-name, $color in $colors {
+  @each $color-type, $color-value in $color {
+    @if $color-type == 'base' {
+      .bg-#{$color-name} {
+        background-color: $color-value $important;
+      }
+
+      .text-#{$color-name} {
+        color: $color-value $important;
+      }
+    } @else if $color-name != 'shades' {
+      .bg-#{$color-name}.#{$color-type} {
+        background-color: $color-value $important;
+      }
+
+      .text-#{$color-name}.#{$color-type} {
+        color: $color-value $important;
+      }
+    }
+  }
+}

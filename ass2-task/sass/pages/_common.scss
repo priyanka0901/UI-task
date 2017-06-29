@@ -1,0 +1,121 @@
+body,
+html {
+  font-family: 'Roboto-Regular', sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+button,
+input,
+select,
+textarea,
+table tr td {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  font-weight: 200;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {font-size: 24px; font-weight: 500;}
+h2 {font-size: 22px; font-weight: 400;}
+h3 {font-size: 20px; font-weight: 400;}
+h4 {font-size: 18px; font-weight: 300;}
+h5 {font-size: 16px; font-weight: 300;}
+h6 {font-size: 14px; font-weight: 200;}
+p,
+ul li,
+a,
+button,
+input,
+label,
+select,
+textarea,
+table tr td {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.padding-right-15 {
+  padding-right: 15px;
+}
+
+.button {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 $light-black;
+  color: $white;
+  font-size: $font-14;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.flat-button {
+  background-color: $transparent;
+  border: 0;
+  display: block;
+  font-size: $font-14;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge::after {
+  border-radius: 3px;
+  color: $white;
+  content: '';
+  font-size: $font-12;
+  height: 15px;
+  line-height: 15px;
+  position: absolute;
+  right: -5px;
+  text-align: center;
+  top: -8px;
+  width: 15px;
+}

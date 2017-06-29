@@ -1,0 +1,785 @@
+//============Navbar Start============//
+
+.nav-wrapper {
+  background-color: $blue;
+  box-shadow: 0 0 2px 2px $light-black;
+  height: 65px;
+  position: relative;
+
+  .navbar {
+    background-color: $blue;
+    color: $white;
+    position: fixed;
+    width: 100%;
+
+    .brand-logo {
+      background-color: $dark-blue;
+      float: left;
+      height: 65px;
+      padding: 0 10px;
+      text-align: center;
+      width: 250px;
+
+      img {
+        margin-top: 12px;
+        width: 180px;
+      }
+    }
+
+    .menu {
+      margin: 20px 10px;
+
+      i {
+        font-size: 25px;
+      }
+    }
+
+    .navbar-options {
+      float: right;
+      line-height: 65px;
+
+      li {
+        display: inline-block;
+        padding: 0 15px;
+
+        a {
+          color: $white;
+          display: block;
+
+          i {
+            font-size: 25px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+          }
+
+          span {
+            background-image: url('../img/man.jpg');
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            display: inline-block;
+            height: 30px;
+            vertical-align: middle;
+            width: 30px;
+          }
+
+          p {
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .badge-envelope::after {
+        background-color: $green;
+        border: 1px solid $green;
+        content: '4';
+      }
+
+      .badge-bell::after {
+        background-color: $orange;
+        border: 1px solid $orange;
+        content: '19';
+      }
+
+      .badge-flag::after {
+        background-color: $red;
+        border: 1px solid $red;
+        content: '10';
+      }
+    }
+  }
+}
+
+//===============Navbar Ends==========//
+
+//==============Sidebar==============//
+
+.sidebar {
+  background-color: $cinder;
+  color: $light-grey;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 0;
+  padding-bottom: 60px;
+  position: fixed;
+  width: 250px;
+
+  .user-info {
+    padding: 0 10px;
+
+    .user-img {
+      background-image: url('../img/man.jpg');
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+    }
+
+    .user-name {
+      display: inline-block;
+      margin-left: 20px;
+      vertical-align: top;
+
+      h2 {
+        margin-bottom: 7px;
+      }
+
+      i {
+        color: $green;
+        margin-right: 10px;
+      }
+    }
+
+    .search-container {
+      background-color: $input-black;
+      border-radius: 4px;
+      margin: 20px 0 10px;
+      padding: 6px 10px;
+
+      input {
+        background-color: $input-black;
+        width: 90%;
+      }
+    }
+  }
+
+  .sidebar-header {
+    input[type='search'] {
+      background-color: $dark-black;
+      color: $white;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 10px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+  
+  .navigation-menu,
+  .label-menu {
+    a {
+      color: $font-black;
+      display: block;
+      line-height: 36px;
+      margin: 5px 0;
+      padding: 5px 20px;
+
+      .left-icon {
+        padding-right: 15px;
+      }
+
+      .right-icon {
+        float: right;
+        font-size: 20px;
+        position: relative;
+        top: 7px;
+      }
+
+      span {
+        border-radius: 2px;
+        color: $white;
+        float: right;
+        font-size: $font-14;
+        line-height: 25px;
+        padding: 0 10px;
+        position: relative;
+        top: 5px;
+      }
+
+      &:hover {
+        background-color: $black;
+      }
+
+      &:active {
+        background-color: $black;
+        border-left: 2px solid $white;
+      }
+    }
+  }
+
+  .navi-submenu {
+    background-color: $menu;
+    li {
+      a {
+        color: $white;
+        line-height: 30px;
+
+        &:hover {
+          color: $dark-blue $important;
+          background-color: $menu $important;
+        }
+      }
+    }
+  }
+}
+
+
+//===============sidebar Ends========//
+
+//===============dashboard==========//
+
+
+.dashboard-container {
+  background-color: $background-white;
+  height: 100%;
+  margin-left: 250px;
+  overflow-y: auto;
+  padding: 20px 10px;
+  padding-bottom: 100px;
+
+  .dashboard-header {
+    span {
+      color: $font-black;
+      font-size: $font-14;
+    }
+  }
+
+  .dashboard-menu {
+    float: right;
+
+    li {
+      display: inline-block;
+      padding: 0 3px;
+
+      a {
+        color: $font-black;
+
+        i {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  .dash-wrapper {
+    margin: 30px 0;
+
+    .analysis-wrapper {
+      background-color: $background-white;
+      display: inline-block;
+      margin-right: -4px;
+      padding-right: 15px;
+      width: 25%;
+
+      .dashboard-analysis {
+        background: $white;
+        height: 100px;
+        width: 100%;
+
+        .analysis-icon {
+          display: inline-block;
+          height: 100%;
+          margin: auto;
+          text-align: center;
+          width: 35%;
+
+          i {
+            color: $white;
+            font-size: 35px;
+            margin: 30px 0;
+          }
+        }
+
+        .analysis-value {
+          display: inline-block;
+          width: 62%;
+
+          h4 {
+            font-size: $font-16;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  
+  .dash-wrapper .analysis-wrapper:nth-child(4) {
+    padding-right: 0 $important;
+  }
+
+  .month-report {
+    background-color: $white;
+    border-bottom: 2px solid $border-grey;
+    border-top: 3px solid $border-grey;
+    padding: 10px 0;
+    width: 100%;
+
+    .month-header {
+      border-bottom: 1px solid $border-grey;
+      padding: 10px 0;
+
+      h2 {
+        font-size: $font-20;
+        margin-left: 10px;
+      }
+
+      .month-header-menu {
+        float: right;
+
+        li {
+          display: inline-block;
+          padding: 0 10px;
+
+          i {
+            color: $border-grey;
+          }
+        }
+      }
+    }
+
+    .month-graph {
+      float: left;
+      height: 100%;
+      padding: 20px 10px;
+      width: 60%;
+
+      h3 {
+        font-size: $font-16;
+        text-align: center;
+      }
+
+      img {
+        margin: 30px 0 0;
+        width: 100%;
+      }
+    }
+
+    .month-analysis-bar {
+      float: left;
+      height: 100%;
+      padding: 10px;
+      width: 40%;
+
+      h3 {
+        font-size: $font-16;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .progress-header {
+        margin: 10px 0;
+        text-transform: capitalize;
+
+        span {
+          float: right;
+        }
+      }
+
+      .progress-bars {
+        background-color: $border-grey;
+        height: 15px;
+        line-height: 15px;
+        width: 100%;
+
+        div {
+          height: 15px;
+          line-height: 15px;
+          width: 75%;
+        }
+      }
+    }
+
+    .month-summary-wrapper {
+      border-top: 1px solid $border-grey;
+      width: 100%;
+
+      .month-summary {
+        display: inline-block;
+        margin: 10px 0;
+        margin-right: -4px;
+        text-align: center;
+        width: 25%;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-right: 1px solid $border-grey;
+        }
+
+        h3 {
+          font-size: 18px;
+          margin: 5px 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .visitors-section {
+    background-color: $transparent;
+    width: 100%;
+
+    .visitors-report {
+      background-color: $white;
+      float: left;
+      height: 100%;
+      margin: 20px 0;
+      width: 60%;
+
+      .visitors-header {
+        border-bottom: 1px solid $border-grey;
+        border-top: 2px solid $green;
+        color: $font-black;
+        line-height: 40px;
+
+        .visitors-header-menu {
+          float: right;
+
+          li {
+            display: inline-block;
+            padding: 0 10px;
+          }
+        }
+
+        h2 {
+          padding-left: 10px;
+         }
+      }
+    }
+
+    .map-container {
+      float: left;
+      width: 70%;
+
+      div {
+        background-image: url('../img/map.png');
+        background-position: center;
+        background-size: cover;
+        height: 370px;
+        width: 100%;
+      }
+    }
+
+    .map-analysis {
+      background-color: $green;
+      float: left;
+      width: 30%;
+
+      .map-data {
+        background-color: $transparent;
+        color: $white;
+        margin: 30px 0 35px;
+        text-align: center;
+
+        i {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: $font-16;
+          margin: 5px 0;
+        }
+
+        h2 {
+          font-size: $font-16;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .visitors-data {
+      background-color: $transparent;
+      float: left;
+      height: 100%;
+      margin-top: 20px;
+      width: 40%;
+
+      .data-details {
+        color: $white;
+        height: 100px;
+        margin: 0 0 10px 20px;
+
+        .data-image {
+          float: left;
+          height: 100px;
+          line-height: 100px;
+          position: relative;
+          text-align: center;
+          width: 30%;
+
+          i {
+            font-size: $font-40;
+            margin-top: 30px;
+          }
+        }
+
+        .overlay {
+          background-color: $light-black;
+          bottom: 0;
+          height: 100px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .data-report {
+          float: left;
+          padding: 10px;
+          width: 70%;
+
+          h3 {
+            font-size: $font-14;
+            font-weight: 300;
+            margin: 5px 0;
+            text-transform: uppercase;
+          }
+
+          .data-progress-bar {
+            background-color: $border-grey;
+            height: 5px;
+            line-height: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+
+            div {
+              background-color: $white;
+              height: 5px;
+              line-height: 5px;
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//===============dashboard ends======//
+
+//===============media queries======//
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+  .dashboard-container {
+    .dashboard-analysis {
+
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard-container {
+    margin-left: 0;
+    width: 100%;
+
+    .dashboard-analysis {
+      width: 22%;
+
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:810px) {
+  .dashboard-container {
+    .dashboard-analysis {
+      width: 21%;
+
+      .analysis-value {
+        h4 {
+          font-size: $font-14;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .nav-wrapper {
+    height: 55px;
+
+    .navbar {
+      .navbar-options {
+        li {
+          padding: 0 5px;
+
+          i {
+            font-size: 15px !important;
+          }
+        }
+      }
+
+      .brand-logo {
+        width: 120px;
+
+        img {
+          margin: 20px 0;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard-container {
+    margin-left: 0;
+    width: 100%;
+
+    .dash-wrapper {
+      margin: 10px 0 30px;
+      .analysis-wrapper {
+        width: 50% $important;
+      }
+    }
+    
+
+    .month-report {
+
+      .month-graph {
+        width: 100%;
+      }
+
+      .month-analysis-bar {
+        width: 100%;
+      }
+
+      .month-summary-wrapper {
+        .month-summary {
+          width: 49%;
+          h3 {
+            font-size: $font-14;
+          }
+          &:nth-child(2) {
+            border-right: 0;
+          }
+        }
+      }
+    }
+
+    .visitors-section {
+      .map-data {
+        margin: 30px 0 38px $important;
+      }
+      .visitors-report {
+        width: 100%;
+      }
+
+      .visitors-data {
+        width: 100%;
+        .data-details {
+          margin-left: 0 $important;
+        }
+      }
+      .map-analysis {
+        .map-data {
+          h2 {
+            font-size: $font-14;
+          }
+        }
+      }
+    }
+  }
+  .dash-wrapper .analysis-wrapper:nth-child(1),
+  .dash-wrapper .analysis-wrapper:nth-child(3) {
+    padding-right: 30px $important;
+  }
+  .dash-wrapper .analysis-wrapper:nth-child(2) {
+    padding: 20px 0;
+    padding-right: 0 $important;
+  }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:470px) {
+  .nav-wrapper {
+
+    .navbar {
+      .menu {
+        margin: 20px 0 20px 10px;
+      }
+
+      .navbar-options {
+        margin: 0 5px;
+
+        .user-name {
+          display: none $important;
+        }
+
+        .brand-logo {
+          padding: 20px 5px;
+          width: 80px;
+
+          img {
+            margin: 10px 4px;
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard-container {
+    .dash-wrapper {
+      .analysis-wrapper {
+        width: 100% !important;
+      }
+    }
+    .dashboard-menu {
+      li {
+        padding: 0 $important;
+
+        a {
+          font-size: $font-12;
+        }
+      }
+    }
+
+    .dashboard-header {
+      span {
+        font-size: $font-10;
+        }
+      }
+
+    .month-report {
+      .month-header {
+        h2 {
+          font-size: 15px;
+        }
+
+        .month-header-menu {
+          li {
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .data-report {
+    p {
+      font-size: $font-14 $important;
+    }
+  }
+
+  .dash-wrapper .analysis-wrapper:nth-child(1),
+  .dash-wrapper .analysis-wrapper:nth-child(3) {
+    padding-right: 0 $important;
+  }
+
+  .dash-wrapper .analysis-wrapper:nth-child(4) {
+    margin-top: 20px;
+  }
+}
+
+//===========media queries ends=======//
