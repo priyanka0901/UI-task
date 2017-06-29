@@ -69,6 +69,15 @@ input {
   outline: none;
 }
 
+.hover {
+  background-color: $hover;
+}
+
+.active {
+  background-color: $black;
+  border-left: 2px solid $white;
+}
+
 .clear {
   clear: both;
 }
