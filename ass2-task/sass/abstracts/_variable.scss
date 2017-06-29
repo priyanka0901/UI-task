@@ -68,4 +68,43 @@ $font-14: 14px;
 $font-12: 12px;
 $font-10: 10px;
 
+//========color class generator=======//
+$example: (
+  "base":       #f00
+);
 
+$tag-status: (
+  "red": #ee2623,
+  "blue": #218dbf,
+  "orange": #FD9800,
+  "green": #00B05B,
+);
+
+$colors: (
+  "example": $example,
+  "tag-status": $tag-status
+);
+
+
+// Color Classes
+@each $color-name, $color in $colors {
+  @each $color-type, $color-value in $color {
+    @if $color-type == 'base' {
+      .bg-#{$color-name} {
+        background-color: $color-value $important;
+      }
+
+      .text-#{$color-name} {
+        color: $color-value $important;
+      }
+    } @else if $color-name != 'shades' {
+      .bg-#{$color-name}.#{$color-type} {
+        background-color: $color-value $important;
+      }
+
+      .text-#{$color-name}.#{$color-type} {
+        color: $color-value $important;
+      }
+    }
+  }
+}
